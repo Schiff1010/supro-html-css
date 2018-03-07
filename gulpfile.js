@@ -22,7 +22,9 @@ const paths = {
 }
 
 const libraries = {
-	scripts: []
+	scripts: [
+		`node_modules/bootstrap/dist/js/bootstrap.min.js`
+	]
 }
 
 const concatScript = [
