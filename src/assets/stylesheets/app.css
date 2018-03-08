@@ -7012,6 +7012,10 @@ body, input, textarea, select, button {
   height: 500px;
   background: #333; }
 
+@media (max-width: 991.98px) {
+  .main > .container {
+    max-width: 100%; } }
+
 .blogs {
   padding-top: 40px; }
   .blogs .image {
@@ -7073,7 +7077,8 @@ body, input, textarea, select, button {
   margin-right: 15px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
-          flex: 1; }
+          flex: 1;
+  width: 100%; }
 
 .sidebar form button {
   margin-left: 15px;
@@ -7092,6 +7097,9 @@ body, input, textarea, select, button {
   margin-top: 30px;
   padding: 14px 24px;
   background: #E8ECED; }
+  @media (max-width: 767.98px) {
+    .sidebar .sidebar-blog {
+      margin-bottom: 30px; } }
   .sidebar .sidebar-blog h3 {
     margin-bottom: 18px; }
   .sidebar .sidebar-blog ul {
@@ -7128,6 +7136,11 @@ body, input, textarea, select, button {
     #globalfooter ul a {
       color: #fff;
       text-decoration: none; }
+  @media (max-width: 767.98px) {
+    #globalfooter h1 {
+      margin-bottom: 30px; }
+    #globalfooter .gf-item {
+      margin-bottom: 30px; } }
   #globalfooter .sf-footer {
     padding: 20px 0;
     margin-top: 40px;

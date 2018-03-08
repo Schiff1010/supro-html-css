@@ -5,6 +5,14 @@
   background: #333;
 }
 
+.main {
+	& > .container {
+		@include media-breakpoint-down(md) {
+			max-width: 100%;
+		}
+	}
+}
+
 .blogs {
   padding-top: 40px;
   .image {
@@ -83,7 +91,8 @@
       font-size: 14px;
       margin-left: 15px;
       margin-right: 15px;
-      flex: 1;
+			flex: 1;
+			width: 100%;
     }
     button {
       margin-left: 15px;
@@ -103,7 +112,10 @@
   .sidebar-blog {
     margin-top: 30px;
     padding: 14px 24px;
-    background: $color-sidebar;
+		background: $color-sidebar;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 30px;
+		}
     h3 {
     margin-bottom: 18px;
     }
@@ -151,7 +163,17 @@
       color: #fff;
       text-decoration: none;
     }
-  }
+	}
+	
+	@include media-breakpoint-down(sm) {
+		h1 {
+			margin-bottom: 30px;
+		}
+		.gf-item {
+			margin-bottom: 30px;
+		}
+	}
+
   .sf-footer {
     padding: 20px 0;
     margin-top: 40px;
