@@ -1,0 +1,22 @@
+{
+  "name": "web-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Docotel Teknologi Celebes",
+  "license": "MIT",
+  "devDependencies": {
+    "bootstrap": "^4.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.3.1",
+    "gulp-less": "^4.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifycss": "^1.0.9",
+    "gulp-uglifyjs": "^0.6.2",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
+}
