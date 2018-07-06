@@ -1,3 +1,7 @@
+@import '../css/bootstrap.min.css';
+
+
+
 @mixin btn {
 	display: inline-block;
 	padding: 6px 12px;
@@ -559,7 +563,7 @@ body {
 #br-detail {
 	margin-left: 120px;
 	margin-right: 120px;
-	&.row {
+	.row {
 		position: relative;
 		
 		.sec-info3 {
