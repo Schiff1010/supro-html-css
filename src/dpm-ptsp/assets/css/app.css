@@ -402,10 +402,14 @@ body {
   float: none;
   margin: 0 0 0 200px; }
 
-#br-detail .row {
+#br-detail {
   margin-left: 120px;
   margin-right: 120px; }
-  #br-detail .row .sec-info3 h6 {
-    color: #000000; }
-  #br-detail .row .sec-info3 h1 {
-    color: #000000; }
+  #br-detail.row {
+    position: relative; }
+    #br-detail.row .sec-info3 h6 {
+      color: #000000; }
+    #br-detail.row .sec-info3 h1 {
+      color: #000000; }
+    #br-detail.row.img-brd {
+      position: inherit; }

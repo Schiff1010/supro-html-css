@@ -557,9 +557,11 @@ body {
 		
 }
 #br-detail {
-	.row {
-		margin-left: 120px;
-		margin-right: 120px;
+	margin-left: 120px;
+	margin-right: 120px;
+	&.row {
+		position: relative;
+		
 		.sec-info3 {
 			h6 {
 				color: #000000;
@@ -569,7 +571,10 @@ body {
 				color: #000000;
 			}
 		}
-		.img-brd {}
+		&.img-brd {
+			position: inherit;
+			
+		}
 	}
 }
 
