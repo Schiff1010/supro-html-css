@@ -3,7 +3,8 @@
 		{
 			name: 'dpm-ptsp',
 			script: [
-				
+				"src/dpm-ptsp/assets/js/jquery.min.js",
+				"src/dpm-ptsp/assets/js/bootstrap.min.js"
 			]
 		},
 	]
