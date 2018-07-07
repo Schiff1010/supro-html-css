@@ -415,6 +415,16 @@ footer {
 			}
 		}
 	}
+	.gf-bottom {
+		.row {
+			@media screen and (max-width: 767px) {
+				display: block;
+				h4 {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
 	h4 {
 		font-size: 16px;
 		color: #fff;
