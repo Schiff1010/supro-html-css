@@ -9227,6 +9227,9 @@ form, fieldset, input, legend, pre, abbr, button {
   margin: 0;
   padding: 0; }
 
+.dropdown-item:focus {
+  background: rgba(0, 0, 0, 0.1); }
+
 html {
   font-family: "Helvetica Neue", Helvetica, "FontAwesome", "Arial", sans-serif;
   font-size: 106.25%;
@@ -9286,6 +9289,17 @@ body {
   font-weight: bold;
   letter-spacing: 1px; }
   .btn-register:hover, .btn-register:focus {
+    color: #fff; }
+
+.btn-line {
+  background: #fff;
+  color: #F44336;
+  border: 2px solid #F44336;
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  .btn-line:hover, .btn-line:focus {
+    background: #F44336;
     color: #fff; }
 
 nav .nav-top {
@@ -9403,6 +9417,10 @@ nav .nav-bottom {
       list-style-type: none; }
       nav .nav-bottom .nb-row ul li {
         padding: 0 20px; }
+        nav .nav-bottom .nb-row ul li.active {
+          border-bottom: 3px solid #F44336;
+          padding-bottom: 20px;
+          margin-bottom: -23px; }
 
 #info .sec-info {
   margin: 120px 0;
