@@ -1,9 +1,11 @@
 // List Projects
 	const projects = [
 		{
-			name: 'webdesa',
+
+			name: 'dpm-ptsp',
 			script: [
-				'node_modules/bootstrap/dist/js/bootstrap.min.js'
+				"src/dpm-ptsp/assets/js/jquery.min.js",
+				"src/dpm-ptsp/assets/js/bootstrap.min.js"
 			]
 		},
 	]
