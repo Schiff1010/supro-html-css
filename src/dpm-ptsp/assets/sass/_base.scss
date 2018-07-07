@@ -9,12 +9,16 @@
 
 html {
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
+	color: #575757;
+	overflow-x: hidden;
 }
 
 body {
 	margin: 0;
-	padding: 0
+	padding: 0;
+	color: #575757;
+	overflow-x: hidden;
 }
 
 ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure,
