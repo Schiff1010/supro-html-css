@@ -45,20 +45,20 @@
 }
 @mixin t-h6 {
 	font-size: 14px;
-	color: #000000;
+	color: #575757;
 	font-weight: 600;
 }
 @mixin t-h4 {
 	font-size: 34px;
-	color: #000000;
+	color: #575757;
+	line-height: 1.4;
 }
 @mixin t-paragraph {
 	font-size: 16px;
 	font-weight: normal;
-	color: #000000;
+	color: #575757;
+	line-height: 1.6;
 }
 @mixin grey {
-	
 	width: 100%;
-	height: 768px;
 }

@@ -1,5 +1,6 @@
 
 @import "base";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
 
 body {
 	&.fixed {
@@ -39,6 +40,31 @@ body {
 	font-weight: 300;
 	line-height: 1.6em;
 	color: #FFFFFF;
+}
+
+.btn {
+	&-register {
+		background: #F44336;
+		color: #fff;
+		padding: 18px 50px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		&:hover, &:focus {
+			color: #fff;
+		}
+	}
+	&-line {
+		background: #fff;
+		color: #F44336;
+		border: 2px solid #F44336;
+		padding: 10px 20px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		&:hover, &:focus {
+			background: #F44336;
+			color: #fff;
+		}
+	}
 }
 
 nav {
@@ -82,8 +108,9 @@ nav {
 					padding: 0 10px;
 					outline: none;
 					margin-left: 10px;
-					.navbar-toggler-icon {
-						color: #333;
+					border: none;
+					&:hover {
+						color: $color-red;
 					}
 				}
 			}
@@ -180,6 +207,11 @@ nav {
 				list-style-type: none;
 				li {
 					padding: 0 20px;
+					&.active {
+						border-bottom: 3px solid #F44336;
+						padding-bottom: 20px;
+						margin-bottom: -23px;
+					}
 				}
 			}
 		}
@@ -187,20 +219,19 @@ nav {
 }
 
 #info {
-	
 	.sec-info {
 		margin: 120px 0;
 		padding: 0 90px;
 		text-align: left;
 		h1 {
-			color: #000000;
+			color: #575757;
 			font-size: 48px;
 			text-align: left;
 			font-weight: normal;
-			
 		}
 		p {
-			color: #000000;
+			color: #575757;
+			line-height: 1.6;
 			font-size: 18px;
 			text-align: left;
 			padding-top: 20px;
@@ -218,14 +249,14 @@ nav {
 			@include t-h6;
 		}
 		h1 {
-			color: #000000;
+			color: #575757;
 			font-size: 48px;
 			text-align: left;
 			font-weight: normal;
 			
 		}
 		p {
-			color: #000000;
+			color: #575757;
 			font-size: 18px;
 			text-align: left;
 			padding-top: 20px;
@@ -239,10 +270,10 @@ nav {
 		margin:0;
 		padding: 0;
 		#info-img {
-			img {
-				width: 683px;
-				height: 640px;
-			}
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
 		}
 	}
 	
@@ -278,7 +309,7 @@ nav {
 		#daftarbtn2 {
 			@include btn ;
 			padding: 11px 39px;
-			border: 2px solid #000000;
+			border: 2px solid #575757;
 			a{
 				color: #F44336;
 				font-weight: 600;
@@ -296,33 +327,45 @@ nav {
 		h6 {
 			@include t-h6;
 		}
+		&-small {
+			letter-spacing: 2px;
+			&:after {
+				content: "";
+				background: #F44336;
+				display: block;
+				width: 100px;
+				height: 3px;
+				margin-top: 30px;
+			}
+		}
 		.f-title {
-			padding-right: 391px;
 			padding-top: 50px;
 			padding-bottom: 60px;
+			max-width: 800px;
 			h4 {
 				@include t-h4;
-				
 			}
 		}
 		
 		
 		.box {
-			.f-icon {
-				h6 {
-					color: #000000;
-					font-size: 24px;
-					font-weight: 600;
-					padding-bottom: 15px;
-				}
+			h6 {
+				color: #575757;
+				font-size: 24px;
+				font-weight: 600;
+				padding-bottom: 15px;
+				letter-spacing: 1px;
 			}
 			p {
 				@include t-paragraph;
-				padding-bottom: 50px;
-				span {
-					color: #F44336;
-				}
-				
+				padding-bottom: 50px;			
+			}
+			i.material-icons {
+				float: left;
+				color: #F44336;
+				margin-right: 15px;
+				margin-top: -6px;
+				font-size: 40px;
 			}
 		}
 		
@@ -330,13 +373,28 @@ nav {
 }
 
 #video {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	#f-video {
-		margin: 100px;
-		margin-right: -50px;
+		display: flex;
+		height: 100%;
 	}
 	
 	.f-text {
-		margin: 100px 150px;
+		@media (max-width: 767px) {
+			margin-top: 50px;
+		}
+		&-small {
+			letter-spacing: 2px;
+			&:after {
+				content: "";
+				background: #F44336;
+				display: block;
+				width: 100px;
+				height: 3px;
+				margin-top: 30px;
+			}
+		}
 		h6 {
 			@include t-h6;
 		}
@@ -359,43 +417,74 @@ nav {
 	.f-text {
 		text-align: left;
 		padding-top: 85px;
+		padding-bottom: 85px;
+		&-small {
+			letter-spacing: 2px;
+			&:after {
+				content: "";
+				background: #F44336;
+				display: block;
+				width: 100px;
+				height: 3px;
+				margin-top: 30px;
+			}
+		}
 		h6 {
 			@include t-h6;
 		}
 		.f-title {
-			padding-right: 391px;
 			padding-top: 50px;
 			padding-bottom: 60px;
+			max-width: 800px;
 			h4 {
 				@include t-h4;
 			}
 		}
 		.box {
-			.f-icon {
-				h6 {
-					font-size: 20px;
-					font-weight: 600;
-					color: #000000;
-				}
-				
+			background: #fff;
+			padding: 20px;
+			display: block;
+			text-decoration: none;
+			transition: all .3s;
+			&:hover {
+				box-shadow: 0 20px 40px rgba(0,0,0,.1)
+			}
+			@media (max-width: 767px) {
+				margin-bottom: 50px;
+			}
+			.img {
+				width: calc(100% + 40px);
+				height: 250px;
+				background-size: cover;
+				background-position: center;
+				margin: -20px;
+				margin-bottom: 20px;
+			}
+			h6 {
+				font-size: 20px;
+				font-weight: 600;
+				color: #575757;
+				margin-bottom: 20px;
+				margin-top: 5px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
 			}
 			p {
 				@include t-paragraph;
-				padding-bottom: 50px;
-			}
-			img {
-				width: 355px;
-				height: 180px;
+				padding-bottom: 20px;
+				height: 100px;
+				overflow: hidden;
 			}
 		}
 	}
 }
 
 #s-daftar {
-	margin: 50px 283px;
+	padding: 50px;
 	text-align: center;
 	h1 {
-		color: #000000;
+		color: #575757;
 		font-size: 48px;
 		margin-bottom: 30px;
 	}
@@ -404,33 +493,88 @@ nav {
 footer {
 	padding: 20px 0;
 	background: #212121;
+	@media (max-width: 767px) {
+		text-align: center;
+	}
 	.gf-top {
-		margin-bottom: 38px;
-		padding-bottom: 15px;
-		border-bottom: 1px solid #797979;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #666;
+		.row {
+			padding-bottom: 20px;
+		}
 		.gft-left {
 			padding-left: 15px;
+			@media (max-width: 767px) {
+				padding-left: 0;
+				margin: auto;
+			}
+			img {
+				filter: brightness(1000%);
+				height: 50px;
+				opacity: .5;
+			}
 		}
 		.gft-right {
 			margin-right: 15px;
+			@media (max-width: 767px) {
+				margin: auto;
+			}
 			.row {
 				margin: 0;
 				& > li {
-					padding-left: 10px;
-					padding-right: 10px;
+					&:not(:last-child) {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
 				}
 				.input-group-prepend {
 					position: absolute;
-					top: 9px;
-					margin-left: 6px;
+					z-index: 10;
+					.material-icons {
+						font-size: 20px;
+					}
 				}
 				input {
-					padding: 6px 6px 6px 23px;
+					padding: 6px 6px 6px 50px;
 					background: rgba(255,255,255,.3);
 					border: none;
+					border-top-left-radius: 4px;
+					border-bottom-left-radius: 4px;
 					outline: none;
 					color: #fff;
 					@include placeholder(#fff);
+				}
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+				li {
+					&:not(:last-child) {
+						margin-right: 20px;
+					}
+				}
+				@media (max-width: 767px) {
+					padding: 15px;
+					li {
+						margin-top: 20px;
+						&:last-child {
+							width: 100%;
+							margin-right: 0;
+						}
+					}
+				}
+			}
+			.input-group {
+				.form-control, .input-group-text {
+					background: #444;
+					border: 0;
+					color: #fff;
+					font-size: 14px;
+					outline: none;
+					box-shadow: none;
+					span {
+						border: 0;
+					}
 				}
 			}
 		}
@@ -461,9 +605,11 @@ footer {
 				font-size: 14px;
 				color: #bfbfbf;
 				transition: color .3s ease;
+				opacity: .7;
 				&:hover {
 					color: #fff;
 					text-decoration: none;
+					opacity: 1;
 				}
 			}
 		}
@@ -507,12 +653,12 @@ PAGE INFO BERITA
 			h2 {
 				font-size: 48px;
 				text-align: left;
-				color: #000000;
+				color: #575757;
 				font-weight: normal;
 			}
 			a {
 				font-size: 18px;
-				color: #000000;
+				color: #575757;
 				text-align: right;
 			}
 		}
@@ -523,7 +669,7 @@ PAGE INFO BERITA
 			a {
 				font-size: 32px;
 				font-weight: normal;
-				color: #000000;
+				color: #575757;
 			}
 			img {
 				width: 230px;
@@ -571,11 +717,11 @@ PAGE INFO BERITA
 		
 		.sec-info3 {
 			h6 {
-				color: #000000;
+				color: #575757;
 				
 			}
 			h1 {
-				color: #000000;
+				color: #575757;
 			}
 		}
 		&.img-brd {
@@ -584,5 +730,3 @@ PAGE INFO BERITA
 		}
 	}
 }
-
-
