@@ -166,7 +166,9 @@ nav {
 				}
 			}
 			.dropdown-menu {
-				top: 26px;
+				@media screen and (min-width: $break-point-nav) {
+					top: 21px !important;
+				}
 				border-radius: 0;
 				.nb-link {
 					padding: 0.65rem 1.5rem;
@@ -403,8 +405,9 @@ footer {
 	padding: 20px 0;
 	background: #212121;
 	.gf-top {
-		margin-bottom: 21px;
-		border-bottom: 1px solid #bfbfbf;
+		margin-bottom: 38px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid #797979;
 		.gft-left {
 			padding-left: 15px;
 		}
@@ -412,6 +415,23 @@ footer {
 			margin-right: 15px;
 			.row {
 				margin: 0;
+				& > li {
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				.input-group-prepend {
+					position: absolute;
+					top: 9px;
+					margin-left: 6px;
+				}
+				input {
+					padding: 6px 6px 6px 23px;
+					background: rgba(255,255,255,.3);
+					border: none;
+					outline: none;
+					color: #fff;
+					@include placeholder(#fff);
+				}
 			}
 		}
 	}

@@ -10,6 +10,14 @@
 	}
 }
 
+@mixin placeholder($color) {
+  &.placeholder { color: $color }
+  &:-moz-placeholder { color: $color }
+  &::-moz-placeholder { color: $color }
+  &:-ms-input-placeholder { color: $color }
+  &::-webkit-input-placeholder { color: $color }
+}
+
 @mixin btn {
 	display: inline-block;
 	padding: 6px 12px;
