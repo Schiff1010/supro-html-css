@@ -10609,10 +10609,16 @@ body.fixed {
 
 body {
   font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
   /*font-size: 14px;
 	font-weight: 300;
 	line-height: 1.6em;
 	color: #FFFFFF;*/ }
+=======
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.6em; }
+>>>>>>> 7c5e1f6b6283083761723d65f7466d21f6c6eb75
 
 .btn-register {
   background: #F44336;
@@ -11016,6 +11022,135 @@ nav .nav-bottom {
     color: #575757;
     font-size: 48px;
     margin-bottom: 30px; }
+
+@media screen and (max-width: 723px) {
+  .berita-top .row {
+    display: block; }
+    .berita-top .row .bt-text {
+      max-width: initial;
+      padding: 0 20px;
+      text-align: center;
+      margin-top: 30px; } }
+
+.berita-top .bt-img {
+  background-size: cover;
+  height: 340px; }
+
+.berita-top .bt-text {
+  max-width: 590px; }
+  .berita-top .bt-text h2 {
+    padding-bottom: 13px; }
+  .berita-top .bt-text a {
+    padding: 5px 16px;
+    display: inline-block;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    color: #F44336;
+    margin-top: 14px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease; }
+    .berita-top .bt-text a:hover {
+      text-decoration: none;
+      background: #F44336;
+      color: #fff;
+      border: 1px solid #F44336; }
+
+.list-berita .lb-header {
+  padding: 20px 0;
+  margin-top: 30px;
+  border-bottom: 1px solid #ded9d9; }
+  .list-berita .lb-header .row {
+    margin: 0; }
+    .list-berita .lb-header .row .lbh-action .dropdown-toggle {
+      cursor: pointer;
+      color: #F44336; }
+      .list-berita .lb-header .row .lbh-action .dropdown-toggle i {
+        vertical-align: middle;
+        color: #333; }
+    .list-berita .lb-header .row .lbh-action .dropdown-menu a {
+      font-size: 14px; }
+
+.list-berita .lb-content .lbc-item {
+  border-bottom: 1px solid #ded9d9;
+  padding: 20px 0; }
+  .list-berita .lb-content .lbc-item .lbc-text small {
+    padding-bottom: 8px;
+    display: block; }
+  .list-berita .lb-content .lbc-item .lbc-text h2 {
+    font-size: 22px; }
+  .list-berita .lb-content .lbc-item .lbc-text a {
+    color: #333;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease; }
+    .list-berita .lb-content .lbc-item .lbc-text a:hover {
+      color: #F44336;
+      text-decoration: none; }
+
+.list-berita .lb-content .lbc-image {
+  background-size: cover;
+  height: 150px; }
+
+.detail-content {
+  padding-top: 40px; }
+  .detail-content .dc-header small {
+    padding-bottom: 10px;
+    display: block; }
+  .detail-content .dc-header .dch-image {
+    height: 300px;
+    background-size: cover;
+    margin: 35px 0; }
+  .detail-content .dc-content .sub-text {
+    padding-bottom: 20px; }
+  .detail-content .dc-content .dcc-text {
+    padding-bottom: 40px; }
+  .detail-content .dc-content h5 {
+    font-size: 14px;
+    font-weight: bold; }
+  .detail-content .dc-content p {
+    margin-bottom: 16px;
+    font-size: 16px; }
+  .detail-content .berita-terkait {
+    background: #ececec;
+    padding: 40px 0; }
+    .detail-content .berita-terkait .bt-header {
+      margin-bottom: 30px; }
+      .detail-content .berita-terkait .bt-header:after {
+        content: "";
+        background: #F44336;
+        display: block;
+        width: 100px;
+        height: 3px;
+        margin-top: 20px; }
+    .detail-content .berita-terkait .carousel-inner {
+      overflow: initial; }
+    .detail-content .berita-terkait .box {
+      display: block;
+      background: #fff;
+      border-radius: 4px;
+      margin-bottom: 35px;
+      -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+      .detail-content .berita-terkait .box:hover {
+        text-decoration: none; }
+        .detail-content .berita-terkait .box:hover .text h6 {
+          color: #F44336; }
+      .detail-content .berita-terkait .box .img {
+        height: 120px; }
+      .detail-content .berita-terkait .box .text {
+        padding: 19px 14px; }
+      .detail-content .berita-terkait .box h6 {
+        color: #575757;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 15px;
+        letter-spacing: 1px;
+        -webkit-transition: color .3s ease;
+        transition: color .3s ease; }
+      .detail-content .berita-terkait .box p {
+        font-size: 14px;
+        font-weight: normal;
+        color: #575757;
+        line-height: 1.6; }
 
 footer {
   padding: 20px 0;
