@@ -11066,11 +11066,18 @@ nav .nav-bottom {
 .list-berita .lb-content .lbc-item {
   border-bottom: 1px solid #ded9d9;
   padding: 20px 0; }
-  .list-berita .lb-content .lbc-item small {
+  .list-berita .lb-content .lbc-item .lbc-text small {
     padding-bottom: 8px;
     display: block; }
-  .list-berita .lb-content .lbc-item h2 {
+  .list-berita .lb-content .lbc-item .lbc-text h2 {
     font-size: 22px; }
+  .list-berita .lb-content .lbc-item .lbc-text a {
+    color: #333;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease; }
+    .list-berita .lb-content .lbc-item .lbc-text a:hover {
+      color: #F44336;
+      text-decoration: none; }
 
 .list-berita .lb-content .lbc-image {
   background-size: cover;

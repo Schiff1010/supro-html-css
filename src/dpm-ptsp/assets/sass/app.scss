@@ -559,12 +559,22 @@ nav {
 		.lbc-item {
 			border-bottom: 1px solid #ded9d9;
 			padding: 20px 0;
-			small {
-				padding-bottom: 8px;
-				display: block;
-			}
-			h2 {
-				font-size: 22px;
+			.lbc-text {
+				small {
+					padding-bottom: 8px;
+					display: block;
+				}
+				h2 {
+					font-size: 22px;
+				}
+				a {
+					color: #333;
+					transition: color .3s ease;
+					&:hover {
+						color: $color-red;
+						text-decoration: none;
+					}
+				}
 			}
 		}
 		.lbc-image {
