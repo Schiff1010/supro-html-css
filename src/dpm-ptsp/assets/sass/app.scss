@@ -39,7 +39,6 @@ body {
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 1.6em;
-	color: #FFFFFF;
 }
 
 .btn {
@@ -489,6 +488,94 @@ nav {
 		margin-bottom: 30px;
 	}
 }
+
+//
+// ******** Page bertia set kategori
+
+.berita-top {
+	.row {
+		@media screen and (max-width: 723px) {
+			display: block;
+			.bt-text {
+				max-width: initial;
+				padding: 0 20px;
+				text-align: center;
+				margin-top: 30px;
+			}
+		}
+	}
+	.bt-img {
+		background-size: cover;
+		height: 340px;
+	}
+	.bt-text {
+		max-width: 590px;
+		h2 {
+			padding-bottom: 13px;
+		}
+		a {
+			padding: 5px 16px;
+			display: inline-block;
+			border: 1px solid #dedede;
+			border-radius: 4px;
+			color: $color-red;
+			margin-top: 14px;
+			transition: all .3s ease;
+			&:hover {
+				text-decoration: none;
+				background: $color-red;
+				color: #fff;
+				border: 1px solid $color-red;
+			}
+		}
+	}
+}
+
+.list-berita {
+	.lb-header {
+		padding: 20px 0;
+		margin-top: 30px;
+		border-bottom: 1px solid #ded9d9;
+		.row {
+			margin: 0;
+			.lbh-action {
+				.dropdown-toggle {
+					cursor: pointer;
+					color: $color-red;
+					i {
+						vertical-align: middle;
+						color: #333;
+					}
+				}
+				.dropdown-menu {
+					a {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	.lb-content {
+		.lbc-item {
+			border-bottom: 1px solid #ded9d9;
+			padding: 20px 0;
+			small {
+				padding-bottom: 8px;
+				display: block;
+			}
+			h2 {
+				font-size: 22px;
+			}
+		}
+		.lbc-image {
+			background-size: cover;
+			height: 150px;
+		}
+	}
+}
+
+//
+// ******** Footer
 
 footer {
 	padding: 20px 0;
