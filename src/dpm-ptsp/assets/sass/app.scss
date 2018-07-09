@@ -676,6 +676,62 @@ nav {
 }
 
 //
+// ******** Informasi Gallery
+
+.informasi-gallery {
+	.lb-content {
+		margin-top: 30px;
+		button {
+			padding: 10px 19px;
+			cursor: pointer;
+			margin: 60px 0;
+			background: $color-red;
+			color: #fff;
+			border-color: $color-red;
+			transition: background .3s ease;
+			&:hover {
+				background: darken($color-red, 15%);
+			}
+		}
+	}
+	.lbh-action {
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li {
+				padding-left: 14px;
+			}
+		}
+		button {
+			background: none;
+			border: none;
+			font-size: 12px;
+			color: #8a8a8a;
+			cursor: pointer;
+			transition: color .3s ease;
+			&:hover {
+				color: #333;
+			}
+			i {
+				vertical-align: middle;
+			}
+		}
+	}
+	.ig-item {
+		margin-bottom: 30px;
+		.igi-image {
+			height: 130px;
+		}
+		h2 {
+			font-size: 16px;
+			font-weight: bold;
+			margin: 16px 0 10px 0px;
+		}
+	}
+}
+
+//
 // ******** Footer
 
 footer {

@@ -11152,6 +11152,49 @@ nav .nav-bottom {
         color: #575757;
         line-height: 1.6; }
 
+.informasi-gallery .lb-content {
+  margin-top: 30px; }
+  .informasi-gallery .lb-content button {
+    padding: 10px 19px;
+    cursor: pointer;
+    margin: 60px 0;
+    background: #F44336;
+    color: #fff;
+    border-color: #F44336;
+    -webkit-transition: background .3s ease;
+    transition: background .3s ease; }
+    .informasi-gallery .lb-content button:hover {
+      background: #d2190b; }
+
+.informasi-gallery .lbh-action ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .informasi-gallery .lbh-action ul li {
+    padding-left: 14px; }
+
+.informasi-gallery .lbh-action button {
+  background: none;
+  border: none;
+  font-size: 12px;
+  color: #8a8a8a;
+  cursor: pointer;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease; }
+  .informasi-gallery .lbh-action button:hover {
+    color: #333; }
+  .informasi-gallery .lbh-action button i {
+    vertical-align: middle; }
+
+.informasi-gallery .ig-item {
+  margin-bottom: 30px; }
+  .informasi-gallery .ig-item .igi-image {
+    height: 130px; }
+  .informasi-gallery .ig-item h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 16px 0 10px 0px; }
+
 footer {
   padding: 20px 0;
   background: #212121; }
