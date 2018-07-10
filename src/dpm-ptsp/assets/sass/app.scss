@@ -69,7 +69,7 @@ body {
 	}
 }
 
-nav {
+/*nav {
 	.nav-top {
 		margin: 0;
 		background: #FFFFFF;
@@ -315,7 +315,270 @@ nav {
 			}
 		}
 	}
-}
+	}*/
+
+	nav {
+		.nav-top {
+			margin: 0;
+			background: #FFFFFF;
+			padding-left: 24px;
+			padding-right: 24px;
+			& > div > .row {
+				height: 64px;
+				.navbar-brand {
+					img {
+						height: 40px;;
+					}
+				}
+
+				.header-btn {
+					a {
+						font-size: 14px;
+						transition: background .3s ease;
+						&.daftar {
+							background: $color-red;
+							border: 1px solid $color-red;
+							color: #fff;
+							margin-left: 10px;
+							&:hover {
+								background: darken($color-red, 15%);
+							}
+						}
+						&.contact {
+							color: $color-red;
+							border: 1px solid $color-border;
+							&:hover {
+								background: darken(#fff, 5%);
+							}
+						}
+					}
+					.navbar-toggler {
+						border: 1px solid $color-border;
+						height: 36px;
+						padding: 0 10px;
+						outline: none;
+						margin-left: 10px;
+						border: none;
+						&:hover {
+							color: $color-red;
+						}
+					}
+				}
+			}
+			.nb-row {
+				height: 66px;
+				@media screen and (max-width: $break-point-nav) {
+					flex-direction: row;
+					height: inherit;
+					.dropdown-menu {
+						position: relative !important;
+						border-top: none;
+						width: 100%;
+						top: 0 !important;
+						transform: initial !important;
+					}
+					.nb-center {
+						& > ul {
+							flex-direction: column;
+						}
+						&, .nb-center {
+							width: 100%;
+							ul {
+								font-family:$font-family;
+								li {
+									width: 100%;
+									.nb-link {
+										display: block;
+										width: 100%;
+										padding: 14px 0;
+										border-bottom: 1px solid #dcdcdc;
+									}
+									.dropdown-menu {
+										margin: 0;
+										.nb-link {
+											padding: 14px;
+											border-bottom: none;
+										}
+									}
+
+								}
+
+							}
+						}
+					}
+					.nb-right {
+						display: none;
+					}
+				}
+				.dropdown-menu {
+					@media screen and (min-width: $break-point-nav) {
+						top: 21px !important;
+					}
+					border-radius: 0;
+					.nb-link {
+						padding: 0.65rem 1.5rem;
+					}
+				}
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+					li {
+						padding: 0 20px;
+						&.active {
+							border-bottom: 3px solid #F44336;
+							padding-bottom: 20px;
+							margin-bottom: -23px;
+						}
+					}
+				}
+			}
+			.nb-link {
+				font-size: 14px;
+				color: #333;
+				cursor: pointer;
+				transition: color .3s ease;
+				&:hover {
+					color: #F44336;
+					text-decoration: none;
+				}
+			}
+		}
+		.nav-bottom {
+			background: #F6F6F6;
+			padding-left: 24px;
+			box-shadow: 0px 3px 3px #dadada;
+			padding-right: 24px;
+			@media screen and (max-width: $break-point-nav) {
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 64px;
+				height: 0;
+				z-index: 999;
+				opacity: 0;
+				transition: all .3s ease;
+				&.active {
+					bottom: 0;
+					height: initial;
+					opacity: 1;
+				}
+				& > div {
+					height: 100%;
+				}
+			}
+			.nb-link {
+				font-size: 14px;
+				color: #333;
+				cursor: pointer;
+				transition: color .3s ease;
+				&:hover {
+					color: #F44336;
+					text-decoration: none;
+				}
+				&.active {
+					color:#F44336;
+				}
+			}
+			.nb-row {
+				height: 66px;
+				@media screen and (max-width: $break-point-nav) {
+					flex-direction: row;
+					height: inherit;
+					.dropdown-menu {
+						position: relative !important;
+						border-top: none;
+						width: 100%;
+						top: 0 !important;
+						transform: initial !important;
+					}
+					.nb-left {
+						& > ul {
+							flex-direction: column;
+						}
+						&, .nb-left {width: 100%;
+							ul {
+								li {
+									width: 100%;
+									.nb-link {
+										display: block;
+										width: 100%;
+										padding: 14px 0;
+										border-bottom: 1px solid #dcdcdc;
+									}
+									.dropdown-menu {
+										margin: 0;
+										.nb-link {
+											padding: 14px;
+											border-bottom: none;
+										}
+									}
+								}
+							}
+						}
+					}
+					.nb-right {
+						display: none;
+					}
+				}
+				.dropdown-menu {
+					@media screen and (min-width: $break-point-nav) {
+						top: 21px !important;
+					}
+					border-radius: 0;
+					.nb-link {
+						padding: 0.65rem 1.5rem;
+					}
+				}
+				ul {
+					margin: 0;
+					padding: 0;
+					list-style-type: none;
+					li {
+						padding: 0 20px;
+						&.active {
+							border-bottom: 3px solid #F44336;
+							padding-bottom: 20px;
+							margin-bottom: -23px;
+						}
+					}
+				}
+			}
+
+			.nb-left {
+				a {
+					&.nb-info {
+						font-size:24px;
+						color:#000000;
+						opacity: 0.4;
+						font-weight:600;
+					}
+				}
+			}
+		}
+		.search-sa {
+			input[type=text] {
+				float:right;
+				width: 130px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: white;
+				background-image: url('searchicon.png');
+				background-position: 10px 10px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+				-webkit-transition: width 0.4s ease-in-out;
+				transition: width 0.4s ease-in-out;
+			}
+		}
+		input[type=text]:focus {
+			width: 100%;
+		}
+	}
+
 
 #info {
 	.sec-info {
@@ -337,11 +600,11 @@ nav {
 			padding-bottom: 30px;
 			font-weight: normal;
 		}
-		
+
 	}
-	
+
 	.sec-info3, .sec-info2 {
-		
+
 		text-align: left;
 		padding: 10px 100px;
 		h6 {
@@ -352,7 +615,7 @@ nav {
 			font-size: 48px;
 			text-align: left;
 			font-weight: normal;
-			
+
 		}
 		p {
 			color: #575757;
@@ -362,9 +625,9 @@ nav {
 			padding-bottom: 30px;
 			font-weight: normal;
 		}
-		
+
 	}
-	
+
 	.sec-image {
 		margin:0;
 		padding: 0;
@@ -375,9 +638,9 @@ nav {
 			background-position: center;
 		}
 	}
-	
+
 	.row {
-		
+
 		height: auto;
 		.info-image {
 			margin-top: -14px;
@@ -389,21 +652,21 @@ nav {
 			}
 		}
 	}
-	
-	
+
+
 	@at-root {
 		#daftarbtn {
 			@include btn;
 			padding: 24px 99px;
 			background: #F44336;
-			
+
 			a{
 				font-size: 18px;
 				color: #FFFFFF;
 				font-weight: 600;	
 			}
-			
-			
+
+
 		}
 		#daftarbtn2 {
 			@include btn ;
@@ -445,8 +708,8 @@ nav {
 				@include t-h4;
 			}
 		}
-		
-		
+
+
 		.box {
 			h6 {
 				color: #575757;
@@ -467,7 +730,7 @@ nav {
 				font-size: 40px;
 			}
 		}
-		
+
 	}
 }
 
@@ -478,7 +741,7 @@ nav {
 		display: flex;
 		height: 100%;
 	}
-	
+
 	.f-text {
 		@media (max-width: 767px) {
 			margin-top: 50px;
@@ -505,8 +768,8 @@ nav {
 		p{
 			@include t-paragraph;
 		}
-		
-		
+
+
 	}
 }
 
@@ -744,7 +1007,7 @@ nav {
 				.text {
 					h6 {
 						color: $color-red;
-						
+
 					}
 				}
 			}
@@ -1247,6 +1510,8 @@ PAGE INFO BERITA
 			opacity:0.6;
 			border: 1px solid #fff;
 			box-shadow:0px 0px 6px #000;
+			/*z-index:-10;*/
+			font-family:$font-family;
 			p{
 				font-size:20px;
 				a{
@@ -1381,7 +1646,44 @@ PAGE INFO BERITA
 				}
 			}
 		}
+		
+		#meka{
+			h3{
+				@include size(34px);
+				padding:50px;
+				position:absolute;
+				font-family:$font-family;
+			}	
+		}
+		.mk{
+			padding:50px;
+			margin-top:100px;
+			font-family:$font-family;
+			.line-1{
+				display:grid;
+				grid-template-columns: 30% 70%;
+
+				.ikon{
+					margin-top:50px;
+					border-radius:50px;
+					background:$color-red;
+					@include w-h(100px,100px);
+					text-align:center;
+					.fa-3x{
+						margin-top:20px;
+					}
+
+				}
+				.info-ikon{
+					margin-top:50px;
+					
+					p{
+						color:#000;
+						opacity:0.8;
+					}
+				}
+			}
+			
+		}
 	}
 }
-
-
