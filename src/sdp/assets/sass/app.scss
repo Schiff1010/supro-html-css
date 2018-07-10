@@ -78,6 +78,13 @@
 			opacity: .8;
 		}
 	}
+	&-red {
+		background-color: $color-red;
+		color: $color-light;
+		i {
+			opacity: .8;
+		}
+	}
 	&-common {
 		background-color: rgba(255,255,255,.1);
 		color: $color-light;
@@ -133,6 +140,20 @@ i.material-icons {
 		color: #fff;
 		border: none;
 		box-shadow: none;
+		&.small-text {
+			padding: 8px 15px;
+		}
+	}
+	textarea.form-control {
+		min-height: 90px;
+	}
+	.select-group {
+		select.btn {
+			padding: 7px 15px !important;
+		}
+		label {
+			top: 0 !important;
+		}
 	}
 	.input-group {
 		border-radius: .25rem;
@@ -612,6 +633,60 @@ section.content {
 			background-color: darken($color-darkblue, 4%);
 			border-radius: 3px;
 			overflow: hidden;
+			padding: 20px;
+			.search {
+				margin-bottom: 15px;
+			}
+			.wbp-profil {
+				img {
+					width: 100%;
+					border-radius: 3px;
+					margin-top: 15px;
+					margin-bottom: 20px;
+				}
+				tr {
+					td {
+						font-size: 14px;
+						padding-top: 10px;
+						padding-bottom: 10px;
+						&:first-child {
+							opacity: .5;
+						}
+					}
+				}
+			}
+			.wbp-history {
+				margin-top: 10px;
+				h6 {
+					margin-bottom: 20px;
+				}
+				.card {
+					background-color: $color-darkblue;
+					border-radius: 3px;
+					border: 2px solid darken($color-darkblue, 5%);
+					&-header {
+						padding: 0;
+					}
+					&-body {
+						font-size: 14px;
+					}
+					h5 {
+						color: $color-green;
+						margin-bottom: 10px;
+					}
+					p {
+						font-size: 14px;
+					}
+					a {
+						color: $color-light;
+						padding: 12px 20px;
+						display: block;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -691,12 +766,6 @@ section.content {
 			}
 			input, select {
 				font-size: 14px;
-			}
-			.select-group {
-				label {
-					top: -3px;
-					right: -10px;
-				}
 			}
 		}
 		.modal-footer {

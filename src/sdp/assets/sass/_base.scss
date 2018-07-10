@@ -35,7 +35,7 @@ body, input, textarea, select, button {
 }
 
 .no-padding {
-	padding: 0;
+	padding: 0 !important;
 }
 
 .flex {
@@ -75,6 +75,39 @@ body, input, textarea, select, button {
 	}
 }
 
+.radio {
+	label {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid rgba(255,255,255,.1);
+		border-radius: 50%;
+		vertical-align: middle;
+		margin-bottom: 2px;
+		margin-right: 10px;
+		position: relative;
+		transition: all .2s;
+		i {
+			font-size: 14px;
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			opacity: 0;
+			transition: all .2s;
+		}
+	}
+	input {
+		display: none;
+		&:checked ~ label {
+			background-color: $color-green;
+			i {
+				opacity: 1;
+				color: $color-light;
+			}
+		}
+	}
+}
+
 
 .select-group {
 	display: inline-block;
@@ -84,13 +117,16 @@ body, input, textarea, select, button {
 		padding-right: 30px !important;
 		position: relative;
 		z-index: 1;
+		&.btn {
+			padding: 7px 15px !important;
+		}
 	}
 	label {
 		position: absolute;
 		z-index: 0;
 		font-size: 20px;
-		top: 2px;
-		right: 0;
+		top: 0;
+		right: -7px;
 		i {
 			color: rgba(255,255,255,.3);
 			margin-left: -35px;
@@ -101,4 +137,8 @@ body, input, textarea, select, button {
 
 .w-100p {
 	width: 100%;
+}
+
+.small-text {
+	font-size: 14px;
 }

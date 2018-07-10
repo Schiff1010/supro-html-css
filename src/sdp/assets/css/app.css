@@ -7317,7 +7317,7 @@ body, input, textarea, select, button {
   text-align: left; }
 
 .no-padding {
-  padding: 0; }
+  padding: 0 !important; }
 
 .flex {
   display: -webkit-box;
@@ -7353,6 +7353,35 @@ body, input, textarea, select, button {
       opacity: 1;
       color: #fff; }
 
+.radio label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-right: 10px;
+  position: relative;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  .radio label i {
+    font-size: 14px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    opacity: 0;
+    -webkit-transition: all .2s;
+    transition: all .2s; }
+
+.radio input {
+  display: none; }
+  .radio input:checked ~ label {
+    background-color: #00B94D; }
+    .radio input:checked ~ label i {
+      opacity: 1;
+      color: #fff; }
+
 .select-group {
   display: inline-block;
   position: relative; }
@@ -7363,12 +7392,14 @@ body, input, textarea, select, button {
     padding-right: 30px !important;
     position: relative;
     z-index: 1; }
+    .select-group select.btn {
+      padding: 7px 15px !important; }
   .select-group label {
     position: absolute;
     z-index: 0;
     font-size: 20px;
-    top: 2px;
-    right: 0; }
+    top: 0;
+    right: -7px; }
     .select-group label i {
       color: rgba(255, 255, 255, 0.3);
       margin-left: -35px;
@@ -7376,6 +7407,9 @@ body, input, textarea, select, button {
 
 .w-100p {
   width: 100%; }
+
+.small-text {
+  font-size: 14px; }
 
 .bg-darkblue {
   background-color: #182038;
@@ -7439,6 +7473,11 @@ body, input, textarea, select, button {
     color: #fff; }
     .btn-green i {
       opacity: .8; }
+  .btn-red {
+    background-color: #D24343;
+    color: #fff; }
+    .btn-red i {
+      opacity: .8; }
   .btn-common {
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff; }
@@ -7480,6 +7519,17 @@ i.material-icons {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none; }
+  .form .form-control.small-text {
+    padding: 8px 15px; }
+
+.form textarea.form-control {
+  min-height: 90px; }
+
+.form .select-group select.btn {
+  padding: 7px 15px !important; }
+
+.form .select-group label {
+  top: 0 !important; }
 
 .form .input-group {
   border-radius: .25rem;
@@ -7859,7 +7909,44 @@ section.content {
       margin-top: 30px;
       background-color: #12182a;
       border-radius: 3px;
-      overflow: hidden; }
+      overflow: hidden;
+      padding: 20px; }
+      section.content .data-content .search {
+        margin-bottom: 15px; }
+      section.content .data-content .wbp-profil img {
+        width: 100%;
+        border-radius: 3px;
+        margin-top: 15px;
+        margin-bottom: 20px; }
+      section.content .data-content .wbp-profil tr td {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        section.content .data-content .wbp-profil tr td:first-child {
+          opacity: .5; }
+      section.content .data-content .wbp-history {
+        margin-top: 10px; }
+        section.content .data-content .wbp-history h6 {
+          margin-bottom: 20px; }
+        section.content .data-content .wbp-history .card {
+          background-color: #182038;
+          border-radius: 3px;
+          border: 2px solid #101626; }
+          section.content .data-content .wbp-history .card-header {
+            padding: 0; }
+          section.content .data-content .wbp-history .card-body {
+            font-size: 14px; }
+          section.content .data-content .wbp-history .card h5 {
+            color: #00B94D;
+            margin-bottom: 10px; }
+          section.content .data-content .wbp-history .card p {
+            font-size: 14px; }
+          section.content .data-content .wbp-history .card a {
+            color: #fff;
+            padding: 12px 20px;
+            display: block; }
+            section.content .data-content .wbp-history .card a:hover {
+              text-decoration: none; }
 
 .table {
   font-size: 14px;
@@ -7909,9 +7996,6 @@ section.content {
       font-size: 16px; }
     .modal .modal-content .modal-body input, .modal .modal-content .modal-body select {
       font-size: 14px; }
-    .modal .modal-content .modal-body .select-group label {
-      top: -3px;
-      right: -10px; }
   .modal .modal-content .modal-footer {
     border-color: rgba(255, 255, 255, 0.1); }
   .modal .modal-content .close {
