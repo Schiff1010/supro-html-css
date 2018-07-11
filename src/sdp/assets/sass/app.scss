@@ -833,3 +833,48 @@ section.content {
 		opacity: .3;
 	}
 }
+
+section.detail {
+	font-size: 14px;
+	h3 {
+		font-size: 20px;
+		color: $color-green;
+		margin-bottom: 20px;
+	}
+	ol {
+		padding-left: 20px;
+		li {
+			margin-bottom: 10px;
+			line-height: 1.8;
+		}
+	}
+	.highlight {
+		margin-bottom: 40px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background-color: rgba(255,255,255,.05);
+	}
+	.process-status {
+		opacity: .5;
+	}
+	.row-detail {
+		.col-md-6 {
+			margin-bottom: 30px;
+		}
+	}
+	table {
+		tr {
+			td {
+				font-size: 14px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&:first-child {
+					opacity: .5;
+					@media (max-width: 520px) {
+						width: 150px;
+					}
+				}
+			}
+		}
+	}
+}

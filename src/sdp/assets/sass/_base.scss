@@ -144,3 +144,20 @@ body, input, textarea, select, button {
 .small-text {
 	font-size: 14px;
 }
+
+.separator {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255,255,255,.1);
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.validate-error {
+	color: $color-red;
+	font-size: 12px;
+	margin-top: 10px;
+	float: right;
+	margin-top: -27px;
+	margin-right: 10px;
+}

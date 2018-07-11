@@ -7301,7 +7301,10 @@ form, fieldset, input, legend, pre, abbr, button {
 
 html, body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  height: 100%; }
 
 a {
   color: #026DD5; }
@@ -7313,7 +7316,6 @@ body, input, textarea, select, button {
   -moz-font-feature-settings: 'kern';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  direction: ltr;
   text-align: left; }
 
 .no-padding {
@@ -7410,6 +7412,21 @@ body, input, textarea, select, button {
 
 .small-text {
   font-size: 14px; }
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.validate-error {
+  color: #D24343;
+  font-size: 12px;
+  margin-top: 10px;
+  float: right;
+  margin-top: -27px;
+  margin-right: 10px; }
 
 .bg-darkblue {
   background-color: #182038;
@@ -8046,3 +8063,33 @@ section.content {
     font-size: 40px;
     margin-bottom: 10px;
     opacity: .3; }
+
+section.detail {
+  font-size: 14px; }
+  section.detail h3 {
+    font-size: 20px;
+    color: #00B94D;
+    margin-bottom: 20px; }
+  section.detail ol {
+    padding-left: 20px; }
+    section.detail ol li {
+      margin-bottom: 10px;
+      line-height: 1.8; }
+  section.detail .highlight {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.05); }
+  section.detail .process-status {
+    opacity: .5; }
+  section.detail .row-detail .col-md-6 {
+    margin-bottom: 30px; }
+  section.detail table tr td {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    section.detail table tr td:first-child {
+      opacity: .5; }
+      @media (max-width: 520px) {
+        section.detail table tr td:first-child {
+          width: 150px; } }
