@@ -193,13 +193,54 @@
               </tr>
             </thead>
 
+            <tbody>
+              
+              <tr>
+                <td>
+                  <div class="checkbox">
+                    <input type="checkbox" id="select-1">
+                    <label for="select-1" class="mr-0"><i class="material-icons">check</i></label>
+                  </div>
+                </td>
+                <td><a href="#" data-toggle="modal" data-target="#detailModal">B.I.3.0085/DU-11</a></td>
+                <td>Rusli Arnis</td>
+                <td>1 tahun</td>
+                <td>01/08/2017</td>
+                <td>01/08/2018</td>
+                <td>Syarat Terpenuhi</td>
+                <td>
+                  <div class="dropdown">
+                    <a href="#" id="user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="material-icons">more_vert</i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="user-dropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
             <tfoot>
               <tr>
-                <td colspan="100" class="text-center">
-                  <div class="empty">
-                    <i class="material-icons">no_sim</i>
-                    Data tidak ditemukan
-                  </div>
+                <td colspan="100">
+                  <nav aria-label="pagination">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Sebelumnya</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active">
+                        <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Selanjutnya</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </td>
               </tr>
             </tfoot>
@@ -209,145 +250,29 @@
     </div>
   </section>
 
+  <!-- For empty data -->
+  <section class="content">
+    <div class="panel text-center">
+      <div class="empty">
+        <i class="material-icons">no_sim</i>
+        Data tidak ditemukan
+      </div>
+    </div>
+    <br>
+  </section>
+
   <!-- Modal -->
-  <div class="modal fade" id="filterModal" tabindex="-1" role="dialog" aria-labelledby="filterModalLabel" aria-hidden="true">
+  <div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="detailModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content form">
         <div class="modal-header">
-          <h5 class="modal-title" id="filterModalLabel">Filter Lanjutan</h5>
+          <h5 class="modal-title" id="detailModalLabel">Rusli Arnis Surya</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true"><i class="material-icons">close</i></span>
           </button>
         </div>
         <div class="modal-body">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <h3>Masukkan Kata Kunci</h3>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Kata dari pencarian Anda">
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-1" class="btn btn-common w-100p">
-                  <option value="">Semua Kategori</option>
-                  <option value="">Kategori 1</option>
-                  <option value="">Kategori 2</option>
-                </select>
-                <label for="filter-1"><i class="material-icons">unfold_more</i></label>
-              </div>
-
-              <br>
-              <br>
-
-              <div class="form-group">
-                <h3>Remisi</h3>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-2" class="btn btn-common w-100p">
-                  <option value="">Semua Status</option>
-                  <option value="">Status 1</option>
-                  <option value="">Status 2</option>
-                </select>
-                <label for="filter-2"><i class="material-icons">unfold_more</i></label>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-3" class="btn btn-common w-100p">
-                  <option value="">Semua Kategori Remisi</option>
-                  <option value="">Kategori Remisi 1</option>
-                  <option value="">Kategori Remisi 2</option>
-                </select>
-                <label for="filter-3"><i class="material-icons">unfold_more</i></label>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-4" class="btn btn-common w-100p">
-                  <option value="">Semua Jenis Remisi</option>
-                  <option value="">Jenis Remisi 1</option>
-                  <option value="">Jenis Remisi 2</option>
-                </select>
-                <label for="filter-4"><i class="material-icons">unfold_more</i></label>
-              </div>
-              <div class="input-group form-group">
-                <input type="text" class="form-control own-datepicker" placeholder="Tgl. Surat Pengantar UPT"><span class="input-group-addon"><i class="material-icons">calendar_today</i></span>
-              </div>
-              <div class="input-group form-group">
-                <input type="text" class="form-control own-datepicker" placeholder="Tgl. Surat Pengantar Kanwil"><span class="input-group-addon"><i class="material-icons">calendar_today</i></span>
-              </div>
-
-            </div>
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <h3>Kelengkapan Data</h3>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-5" class="btn btn-common w-100p">
-                  <option value="">Semua Data</option>
-                  <option value="">Data 1</option>
-                  <option value="">Data 2</option>
-                </select>
-                <label for="filter-5"><i class="material-icons">unfold_more</i></label>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-6" class="btn btn-common w-100p">
-                  <option value="">Semua Status Data</option>
-                  <option value="">Status Data 1</option>
-                  <option value="">Status Data 2</option>
-                </select>
-                <label for="filter-6"><i class="material-icons">unfold_more</i></label>
-              </div>
-
-              <br>
-              <br>
-
-              <div class="form-group">
-                <h3>Kelengkapan Administratif</h3>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-7" class="btn btn-common w-100p">
-                  <option value="">Semua Administratif</option>
-                  <option value="">Administratif 1</option>
-                  <option value="">Administratif 2</option>
-                </select>
-                <label for="filter-7"><i class="material-icons">unfold_more</i></label>
-              </div>
-              <div class="select-group w-100p form-group">
-                <select name="" id="filter-8" class="btn btn-common w-100p">
-                  <option value="">Semua Status Administratif</option>
-                  <option value="">Status Administratif 1</option>
-                  <option value="">Status Administratif 2</option>
-                </select>
-                <label for="filter-8"><i class="material-icons">unfold_more</i></label>
-              </div>
-
-              <br>
-              <br>
-
-              <div class="form-group">
-                <h3>Lainnya</h3>
-              </div>
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="checkbox">
-                    <input type="checkbox" id="filter-9">
-                    <label for="filter-9"><i class="material-icons">check</i></label>
-                    <span>Data Aktif</span>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="checkbox">
-                    <input type="checkbox" id="filter-10">
-                    <label for="filter-10"><i class="material-icons">check</i></label>
-                    <span>Usulan dari Mutasi</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-common" data-dismiss="modal">Hapus Filter</button>
-          <button type="button" class="btn btn-green">Cari</button>
+          <h3>Keterangan</h3>
         </div>
       </div>
     </div>
