@@ -1,0 +1,64 @@
+@mixin own-breakpoint-max($width) {
+  @media screen and (max-width: $width) {
+		display: none;
+	}
+}
+
+@mixin own-breakpoint-min($width) {
+  @media screen and (min-width: $width) {
+		display: none;
+	}
+}
+
+@mixin placeholder($color) {
+  &.placeholder { color: $color }
+  &:-moz-placeholder { color: $color }
+  &::-moz-placeholder { color: $color }
+  &:-ms-input-placeholder { color: $color }
+  &::-webkit-input-placeholder { color: $color }
+}
+
+@mixin btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+@mixin btn-contact {
+	padding: 11px 34px;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 600;
+}
+@mixin t-h6 {
+	font-size: 14px;
+	color: #575757;
+	font-weight: 600;
+}
+@mixin t-h4 {
+	font-size: 34px;
+	color: #575757;
+	line-height: 1.4;
+}
+@mixin t-paragraph {
+	font-size: 16px;
+	font-weight: normal;
+	color: #575757;
+	line-height: 1.6;
+}
+@mixin grey {
+	width: 100%;
+}

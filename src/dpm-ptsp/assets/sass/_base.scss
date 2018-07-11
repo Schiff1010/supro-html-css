@@ -1,0 +1,60 @@
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap.min";
+@import  'variables';
+@import  'mixins';
+@import 'fontawesome';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	color: #575757;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #575757;
+	overflow-x: hidden;
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure,
+form, fieldset, input, legend, pre, abbr, button {
+	margin: 0;
+  padding: 0;
+}
+
+.dropdown-item {
+	&:focus {
+		background: rgba(0,0,0,.1);
+	}
+}
+
+html {
+	font-family: $font-family;
+	font-size: 106.25%;
+	quotes: "“" "”"
+}
+
+body {
+	font-size: 17px;
+	line-height: 1.47059;
+	font-weight: 400;
+	letter-spacing: -.022em;
+	font-family: $font-family;
+	background-color: #fff;
+	color: #333;
+	font-style: normal
+}
+
+body, input, textarea, select, button {
+	font-synthesis: none;
+	-moz-font-feature-settings: 'kern';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	direction: ltr;
+	text-align: left
+}
