@@ -67,6 +67,9 @@ body {
 }
 
 nav {
+	position: relative;
+	z-index: 2;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, .1);
 	.nav-top {
 		margin: 0;
 		background: #FFFFFF;
@@ -118,7 +121,6 @@ nav {
 	.nav-bottom {
 		background: #F6F6F6;
 		padding-left: 24px;
-		box-shadow: 0px 3px 3px #dadada;
 		padding-right: 24px;
 		@media screen and (max-width: $break-point-nav) {
 			overflow: hidden;
@@ -132,7 +134,8 @@ nav {
 			transition: all .3s ease;
 			&.active {
 				bottom: 0;
-				height: initial;
+				position: initial;
+				height: auto;
 				opacity: 1;
 			}
 			& > div {
@@ -210,6 +213,9 @@ nav {
 						border-bottom: 3px solid #F44336;
 						padding-bottom: 20px;
 						margin-bottom: -23px;
+						@media (max-width: 767px) {
+							border: none;
+						}
 					}
 				}
 			}
@@ -217,11 +223,19 @@ nav {
 	}
 }
 
+.separator {
+	border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
 #info {
 	.sec-info {
-		margin: 120px 0;
+		margin-top: 120px;
+		margin-bottom: 120px;
 		padding: 0 90px;
 		text-align: left;
+		.separator {
+			margin-top: 120px;
+		}
 		h1 {
 			color: #575757;
 			font-size: 48px;
@@ -268,6 +282,9 @@ nav {
 	.sec-image {
 		margin:0;
 		padding: 0;
+		@media (max-width: 767px) {
+			display: none !important;
+		}
 		#info-img {
 			width: 100%;
 			height: 100%;
@@ -532,6 +549,10 @@ nav {
 }
 
 .list-berita {
+	h4 {
+		font-size: 48px;
+		margin-bottom: 20px;
+	}
 	.lb-header {
 		padding: 20px 0;
 		margin-top: 30px;
@@ -541,10 +562,14 @@ nav {
 			.lbh-action {
 				.dropdown-toggle {
 					cursor: pointer;
-					color: $color-red;
+					font-size: 18px;
+					text-transform: uppercase;
 					i {
 						vertical-align: middle;
 						color: #333;
+					}
+					&:after {
+						display: none;
 					}
 				}
 				.dropdown-menu {
@@ -561,15 +586,21 @@ nav {
 			padding: 20px 0;
 			.lbc-text {
 				small {
-					padding-bottom: 8px;
 					display: block;
+					font-size: 14px;
+					font-weight: 600;
+					letter-spacing: 2px;
 				}
 				h2 {
-					font-size: 22px;
+					margin-top: 10px;
+					font-size: 32px;
+					@include ellipsis;
 				}
 				a {
 					color: #333;
 					transition: color .3s ease;
+					margin-bottom: 30px;
+					display: block;
 					&:hover {
 						color: $color-red;
 						text-decoration: none;
@@ -593,11 +624,16 @@ nav {
 		small {
 			padding-bottom: 10px;
 			display: block;
+			font-size: 14px;
+			letter-spacing: 2px;
 		}
 		.dch-image {
 			height: 300px;
 			background-size: cover;
 			margin: 35px 0;
+		}
+		h1 {
+			font-size: 48px;
 		}
 	}
 	.dc-content {
@@ -606,6 +642,7 @@ nav {
 		}
 		.dcc-text {
 			padding-bottom: 40px;
+			line-height: 1.6;
 		}
 		h5 {
 			font-size: 14px;
@@ -621,11 +658,14 @@ nav {
 		padding: 40px 0;
 		.bt-header {
 			margin-bottom: 30px;
+			font-size: 14px;
+			letter-spacing: 2px;
+			font-weight: bold;
 			&:after {
 				content: "";
 				background: #F44336;
 				display: block;
-				width: 100px;
+				width: 40px;
 				height: 3px;
 				margin-top: 20px;
 			}
@@ -968,6 +1008,65 @@ PAGE INFO BERITA
 		&.img-brd {
 			position: inherit;
 			
+		}
+	}
+}
+
+#profil {
+	.main-image {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	.main-title {
+		background-color: #FFFFFF;
+		padding: 50px;
+		h1 {
+			font-size: 48px;
+			margin-bottom: 30px;
+			line-height: 1.4;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.6;
+		}
+	}
+	.content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		ul {
+			margin-top: 20px;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+		h2 {
+			font-size: 36px;
+			line-height: 1.4;
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 20px;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+		.photo-profil {
+			img {
+				width: 100%;
+				margin-bottom: 40px;
+			}
+			small {
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				display: block;
+				margin-bottom: 10px;
+			}
+			h3 {
+				font-size: 24px;
+				font-weight: 600;
+				letter-spacing: 1px;
+				font-weight: 700;
+			}
 		}
 	}
 }

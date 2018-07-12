@@ -18,6 +18,12 @@
   &::-webkit-input-placeholder { color: $color }
 }
 
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @mixin btn {
 	display: inline-block;
 	padding: 6px 12px;
