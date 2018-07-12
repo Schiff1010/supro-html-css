@@ -1,0 +1,228 @@
+@import "base";
+
+.navigation {
+  vertical-align: middle;
+  .topbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-separator;
+    .list-inline {
+      margin-top: 20px;
+    }
+    .toggle {
+      display: none;
+    }
+  }
+  .menus {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-separator;
+    li {
+      padding-right: 15px;
+      padding-left: 15px;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        color: $color-body;
+        font-weight: 600;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .dropdown-menu {
+      margin-top: 23px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      border-top: 3px solid $color-primary;
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    .topbar {
+      .text-right {
+        border-top: 1px solid $color-separator;
+        text-align: left !important;
+        margin-top: 20px;
+      }
+      .toggle {
+        float: right;
+        display: inline-block;
+      }
+    }
+    .menus {
+      display: none;
+      ul {
+        li {
+          width: 100%;
+          padding: 0;
+          text-align: left;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+section.slideshow {
+  .carousel-item {
+    background-color: $color-darkblue;
+    img {
+      opacity: .6;
+    }
+  }
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    h2 {
+      font-size: 72px;
+    }
+    h3 {
+      font-weight: lighter;
+    }
+    p {
+      font-style: italic;
+      font-size: 18px;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+section.features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    color: $color-primary;
+    font-size: 40px;
+    margin-bottom: 80px;
+    span {
+      font-size: 30px;
+    }
+  }
+  .item {
+    margin-bottom: 80px;
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      color: $color-primary;
+      margin-bottom: 20px;
+      img {
+        margin-right: 20px;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: $color-primary;
+  margin-bottom: 30px;
+  &:after {
+    content: "";
+    display: block;
+    background-color: $color-gray-light;
+    width: 80px;
+    height: 8px;
+    margin-top: 20px;
+  }
+  &.title-center {
+    text-align: center;
+    &:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+section.about {
+  padding-bottom: 80px;
+  .content {
+    margin-bottom: 40px;
+    h3 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.bg-gray {
+  background-color: $color-bg-light;
+}
+
+section.blog {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .title {
+    margin-bottom: 50px;
+  }
+  .item {
+    background-color: $color-light;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    .img {
+      width: calc(100% + 40px);
+      height: 180px;
+      margin-top: -20px;
+      margin-left: -20px;
+      margin-right: -20px;
+      margin-bottom: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+    h3 {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      &:after {
+        content: "";
+        display: block;
+        background-color: $color-gray-light;
+        width: 30px;
+        height: 2px;
+        margin-top: 10px;
+      }
+    }
+    p {
+      font-size: 12px;
+      color: $color-gray;
+      margin-bottom: 20px;
+    }
+    .btn {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
