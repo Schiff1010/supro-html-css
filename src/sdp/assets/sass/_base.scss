@@ -44,6 +44,9 @@ body, input, textarea, select, button {
 }
 
 .checkbox {
+	.validate-error {
+		margin-top: 3px;
+	}
 	label {
 		display: inline-block;
 		width: 20px;

@@ -7325,6 +7325,9 @@ body, input, textarea, select, button {
   display: -ms-flexbox;
   display: flex; }
 
+.checkbox .validate-error {
+  margin-top: 3px; }
+
 .checkbox label {
   display: inline-block;
   width: 20px;
