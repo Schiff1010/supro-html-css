@@ -25,6 +25,14 @@
 				"node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
 			]
 		},
+		{
+			name: 'mall-pengayoman',
+			script: [
+				"node_modules/jquery/dist/jquery.min.js",
+				"node_modules/popper.js/dist/umd/popper.min.js",
+				"node_modules/bootstrap/dist/js/bootstrap.min.js"
+			]
+		},
 	]
 
 // Available Package

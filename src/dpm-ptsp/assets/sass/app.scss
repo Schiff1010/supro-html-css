@@ -196,7 +196,7 @@ nav {
 			}
 			.dropdown-menu {
 				@media screen and (min-width: $break-point-nav) {
-					top: 21px !important;
+					top: 20px !important;
 				}
 				border-radius: 0;
 				.nb-link {
@@ -716,6 +716,26 @@ nav {
 // ******** Informasi Gallery
 
 .informasi-gallery {
+	.pagination {
+		justify-content: center;
+		.page-item {
+			.page-link {
+				color: $color-red;
+			}
+			&.disabled {
+				.page-link {
+					color: #aaa;
+				}
+			}
+			&.active {
+				.page-link {
+					background-color: $color-red;
+					border-color: $color-red;
+					color: #fff;
+				}
+			}
+		}
+	}
 	.lb-content {
 		margin-top: 30px;
 		button {
@@ -738,9 +758,11 @@ nav {
 			padding: 0;
 			li {
 				padding-left: 14px;
+				margin-left: 20px;
 			}
 		}
-		button {
+		a {
+			font-weight: 600;
 			background: none;
 			border: none;
 			font-size: 12px;
@@ -749,21 +771,41 @@ nav {
 			transition: color .3s ease;
 			&:hover {
 				color: #333;
+				text-decoration: none;
 			}
 			i {
 				vertical-align: middle;
+				margin-right: 5px;
 			}
 		}
 	}
 	.ig-item {
 		margin-bottom: 30px;
+		display: block;
+		color: #333;
+		&:hover {
+			text-decoration: none;
+			h2 {
+				color: $color-red;
+			}
+		}
 		.igi-image {
-			height: 130px;
+			height: 200px;
+			transition: all .2s;
+			&:hover {
+				box-shadow: 0 20px 40px rgba(0, 0, 0, .1);
+			}
 		}
 		h2 {
-			font-size: 16px;
+			font-size: 18px;
+			line-height: 1.4;
 			font-weight: bold;
 			margin: 16px 0 10px 0px;
+			transition: all .2s;
+		}
+		small {
+			font-size: 12px;
+			opacity: .6;
 		}
 	}
 }
@@ -797,6 +839,7 @@ footer {
 		}
 		.gft-right {
 			margin-right: 15px;
+			color: #999;
 			@media (max-width: 767px) {
 				margin: auto;
 			}
@@ -1067,6 +1110,184 @@ PAGE INFO BERITA
 				letter-spacing: 1px;
 				font-weight: 700;
 			}
+		}
+	}
+}
+
+.gallery-detail {
+	img {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+	.lbh-text {
+		h5 {
+			a {
+				color: $color-red;
+			}
+			span {
+				opacity: .4;
+			}
+		}
+	}
+}
+
+.download {
+	.lb-content {
+		padding-bottom: 100px;
+		margin-top: 0;
+		.download-item {
+			border-bottom: 1px solid rgba(0, 0, 0, .1);
+			padding-top: 20px;
+			padding-bottom: 20px;
+			display: flex;
+			justify-content: space-between;
+			h3 {
+				font-size: 16px;
+			}
+			a {
+				color: $color-red;
+				&:hover {
+					text-decoration: none;
+				}
+				i {
+					margin-right: 5px;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+}
+
+.contact {
+	.lb-content {
+		padding-bottom: 100px;
+		h5 {
+			font-size: 24px;
+			line-height: 1.4;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		h6 {
+			font-weight: bold;
+			i {
+				vertical-align: bottom;
+			}
+		}
+		.form-group {
+			margin-top: 20px;
+			.form-control {
+				padding: 15px 20px;
+			}
+			.btn-register {
+				margin-top: 20px;
+				text-transform: uppercase;
+			}
+		}
+		ul {
+			margin-top: 20px;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.team {
+	.photo-leader {
+		margin-bottom: 20px;
+		.img {
+			width: 100%;
+			height: 300px;
+			background-position: center;
+			background-size: cover;
+		}
+		.name {
+			padding: 20px;
+			background-color: #fff;
+			border-bottom: 5px solid $color-red;
+			h3 {
+				font-size: 18px;
+				font-weight: bold;
+				margin-top: 5px;
+			}
+			p {
+				font-size: 12px !important;
+				letter-spacing: 1px;
+				font-weight: 600;
+				margin: 0 !important;
+			}
+		}
+	}
+
+	.photo-member {
+		margin-bottom: 40px;
+		text-align: center;
+		.img {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			border-radius: 50%;
+			background-position: center;
+			background-size: cover;
+		}
+		.name {
+			padding: 20px;
+			background-color: #fff;
+			h3 {
+				font-size: 16px;
+				font-weight: bold;
+				margin-bottom: 5px;
+			}
+			p {
+				font-size: 9px !important;
+				letter-spacing: 1px;
+				font-weight: 600;
+				margin: 0 !important;
+			}
+		}
+	}
+}
+
+.mekanisme {
+	padding-bottom: 100px;
+	.lb-content {
+		padding-top: 30px;
+		.item {
+			margin-bottom: 50px;
+			.icon {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background-color: $color-red;
+				text-align: center;
+				line-height: 100px;
+				float: left;
+			}
+			.content {
+				margin-left: 130px;
+				h3 {
+					font-size: 24px;
+					font-weight: bold;
+					margin-bottom: 10px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+.privacy {
+	.box {
+		margin-bottom: 30px;
+		h6 {
+			margin-top: 30px !important;
+			margin-bottom: 12px !important;
+		}
+		p {
+			height: auto !important;
+			font-size: 14px !important;
 		}
 	}
 }

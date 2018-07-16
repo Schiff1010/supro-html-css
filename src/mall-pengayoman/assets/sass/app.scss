@@ -1,0 +1,121 @@
+@import "variables";
+@import "mixins";
+@import "base";
+
+#navigation {
+	.top-menu {
+		background-color: $color-primary;
+		color: $color-light;
+		padding-top: 25px;
+		padding-bottom: 25px;
+		background-image: url(../images/pattern.svg);
+		background-size: cover;
+		background-position: center;
+		font-size: 14px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+		position: relative;
+		z-index: 2;
+		.search {
+			width: 100%;
+			padding-left: 40px;
+			padding-right: 40px;
+			input {
+				padding: 8px 20px;
+			}
+			i.material-icons {
+				color: $color-primary;
+			}
+		}
+		a {
+			color: $color-light;
+			font-weight: 600;
+			transition: all .2s;
+			border-bottom: 2px solid transparent;
+			&:focus, &:hover {
+				text-decoration: none;
+				border-bottom: 2px solid $color-light;
+			}
+		}
+		.list-inline {
+			&-item {
+				margin-left: 10px;
+				position: relative;
+				.badge {
+					background-color: $color-yellow;
+					color: $color-light;
+					position: absolute;
+					top: -10px;
+					right: -10px;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					border: none;
+					padding: 0;
+					text-align: center;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+
+	.nav-menu {
+		background-color: $color-light;
+		font-size: 14px;
+		font-weight: 600;
+		color: $color-body;
+		a {
+			color: $color-body;
+			text-transform: uppercase;
+		}
+		.category {
+			a {
+				background-color: $color-primary;
+				color: $color-light;
+				display: block;
+				padding: 10px 15px;
+				i.material-icons {
+					float: right;
+					transform: translateY(-2px);
+				}
+			}
+		}
+		.active {
+			a {
+				border-bottom: 2px solid $color-primary;
+			}
+		}
+		.list-inline-item {
+			padding-left: 10px;
+			padding-right: 10px;
+			position: relative;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+			&.category {
+				&:hover {
+					.dropdown-category {
+						display: block;
+					}
+				}
+			}
+			.dropdown-category {
+				position: absolute;
+				width: calc(100% - 10px);
+				border: 1px solid rgba(0,0,0,.16);
+				display: none;
+				a {
+					background-color: $color-light;
+					color: $color-body;
+					border-bottom: 1px solid rgba(0,0,0,.16);
+					transition: all .2s;
+					&:hover {
+						background-color: rgba(0, 0, 0, .04) !important;
+					}
+				}
+			}
+		}
+	}
+}
