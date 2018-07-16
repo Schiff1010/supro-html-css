@@ -1,4 +1,5 @@
 @import	'css/bootstrap.min';
+@import	'css/owl.carousel.min';
 @import 'variables';
 @import 'mixins';
 
@@ -186,5 +187,66 @@ body, input, textarea, select, button {
 			left: 10px;
 			transform: translateY(-50%);
 		}
+	}
+}
+
+.title {
+	font-family: $font-primary;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	&:after {
+		content: '';
+		display: block;
+		width: 50px;
+		height: 3px;
+		margin-top: 5px;
+		background-color: $color-primary;
+	}
+}
+.head-section {
+	display: flex;
+	justify-content: space-between;
+	.right {
+		a {
+			font-size: 14px;
+			&:hover {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 100%;
+}
+.col-xs-15 {
+	max-width: 20%;
+	float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+		max-width: 20%;
+		float: left;
+	}
+}
+@media (min-width: 992px) {
+	.col-md-15 {
+		max-width: 20%;
+		float: left;
+	}
+}
+@media (min-width: 1200px) {
+	.col-lg-15 {
+		max-width: 20%;
+		float: left;
 	}
 }
