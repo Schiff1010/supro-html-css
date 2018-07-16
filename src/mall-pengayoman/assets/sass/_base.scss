@@ -1,8 +1,6 @@
-@import "../../../../node_modules/bootstrap/dist/css/bootstrap.min";
-@import "../../../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min";
-@import "../../../../node_modules/select2/dist/css/select2.min";
-@import  'variables';
-@import  'mixins';
+@import	'css/bootstrap.min';
+@import 'variables';
+@import 'mixins';
 
 * {
 	box-sizing: border-box;
@@ -14,17 +12,29 @@ form, fieldset, input, legend, pre, abbr, button {
   padding: 0;
 }
 
+i.material-icons {
+	vertical-align: bottom;
+}
+
 html, body {
-	font-family: $font-family;
+	font-family: $font-primary;
 	font-size: 16px;
 	position: relative;
 	width: 100%;
 }
 
 a {
-	color: $color-blue;
-	&:hover, &:focus {
+	color: $color-primary;
+	border-bottom: 2px solid transparent;
+	&:focus, &:hover {
 		color: inherit;
+		text-decoration: none;
+		border-bottom: 2px solid $color-primary;
+	}
+	&.a-icon {
+		&:focus, &:hover {
+			border-bottom: 2px solid transparent !important;
+		}
 	}
 }
 
@@ -71,7 +81,7 @@ body, input, textarea, select, button {
 	input {
 		display: none;
 		&:checked ~ label {
-			background-color: $color-green;
+			background-color: $color-primary;
 			i {
 				opacity: 1;
 				color: $color-light;
@@ -104,7 +114,7 @@ body, input, textarea, select, button {
 	input {
 		display: none;
 		&:checked ~ label {
-			background-color: $color-green;
+			background-color: $color-primary;
 			i {
 				opacity: 1;
 				color: $color-light;
@@ -127,7 +137,7 @@ body, input, textarea, select, button {
 			padding: 7px 15px !important;
 		}
 		option {
-			color: $color-darkblue;
+			color: $color-primary;
 		}
 	}
 	label {
@@ -144,80 +154,37 @@ body, input, textarea, select, button {
 	}
 }
 
-.w-100p {
-	width: 100%;
-}
-
-.small-text {
-	font-size: 14px;
-}
-
-.separator {
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255,255,255,.1);
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.validate-error {
-	color: $color-red;
-	font-size: 12px;
-	margin-top: 10px;
-	float: right;
-	margin-top: -27px;
+.span-divider {
+	opacity: .6;
+	margin-left: 10px;
 	margin-right: 10px;
-	&.with-icon {
-		margin-right: 40px;
-	}
 }
 
-.select2 {
-	width: 100% !important;
-	.select2-selection {
-		background-color: rgba(255, 255, 255, 0.1);
-		border: none;
-		border-radius: 3px;
-		padding: 10px;
-		height: auto;
-		outline: none;
-	}
-	.select2-selection__rendered {
-		color: $color-light !important;
-		font-size: 14px;
-		line-height: initial !important;
-	}
-	.select2-selection__arrow {
-		display: none;
-	}
-	.select2-results > .select2-results__options {
-		background-color: $color-darkblue !important;
-	}
+.w-left {
+	width: 265px;
 }
-.select2-container {
-	.select2-results {
-		& > .select2-results__options {
-			background-color: $color-darkblue !important;
-			font-size: 14px;
-		}
-	}
-	.select2-dropdown {
+
+.w-right {
+	width: 365px;
+}
+
+.form {
+	input {
+		width: 100%;
 		border: none;
-	}
-	.select2-results__option[aria-selected=true] {
-		background-color: $color-blue !important;
-	}
-	.select2-results__option--highlighted[aria-selected] {
-		background-color: lighten($color-darkblue, 10%);
-	}
-	.select2-search {
-		background-color: $color-darkblue !important;
-	}
-	.select2-search__field {
-		background-color: $color-darkblue !important;
-		border: none !important;
 		outline: none;
-		color: $color-light;
-		font-size: 14px;
+		border-radius: 3px;
+	}
+	&.with-icon {
+		position: relative;
+		input {
+			padding-left: 40px !important;
+		}
+		i.material-icons {
+			position: absolute;
+			top: 50%;
+			left: 10px;
+			transform: translateY(-50%);
+		}
 	}
 }
