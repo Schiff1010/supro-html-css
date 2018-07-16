@@ -104,16 +104,29 @@
 			.dropdown-category {
 				position: absolute;
 				width: calc(100% - 10px);
-				border: 1px solid rgba(0,0,0,.16);
+				border: 1px solid $color-border;
 				display: none;
 				a {
 					background-color: $color-light;
 					color: $color-body;
-					border-bottom: 1px solid rgba(0,0,0,.16);
+					border-bottom: 1px solid $color-border;
 					transition: all .2s;
 					&:hover {
-						background-color: rgba(0, 0, 0, .04) !important;
+						background-color: $color-gray-light !important;
 					}
+				}
+				&:hover {
+					.sub-category {
+						display: block;
+					}
+				}
+				.sub-category {
+					display: none;
+					left: calc(100% + 1px);
+					top: -2px;
+					position: absolute;
+					width: 100%;
+					border: 1px solid $color-border !important;
 				}
 			}
 		}

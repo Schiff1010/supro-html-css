@@ -7254,13 +7254,22 @@ body, input, textarea, select, button {
     #navigation .nav-menu .list-inline-item .dropdown-category {
       position: absolute;
       width: calc(100% - 10px);
-      border: 1px solid rgba(0, 0, 0, 0.16);
+      border: 1px solid #CECECE;
       display: none; }
       #navigation .nav-menu .list-inline-item .dropdown-category a {
         background-color: #FFFFFF;
         color: #363636;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+        border-bottom: 1px solid #CECECE;
         -webkit-transition: all .2s;
         transition: all .2s; }
         #navigation .nav-menu .list-inline-item .dropdown-category a:hover {
-          background-color: rgba(0, 0, 0, 0.04) !important; }
+          background-color: #F5F5F5 !important; }
+      #navigation .nav-menu .list-inline-item .dropdown-category:hover .sub-category {
+        display: block; }
+      #navigation .nav-menu .list-inline-item .dropdown-category .sub-category {
+        display: none;
+        left: calc(100% + 1px);
+        top: -2px;
+        position: absolute;
+        width: 100%;
+        border: 1px solid #CECECE !important; }
