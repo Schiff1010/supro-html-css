@@ -1,5 +1,6 @@
 @import "../../../../node_modules/bootstrap/dist/css/bootstrap.min";
 @import "../../../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min";
+@import "../../../../node_modules/select2/dist/css/select2.min";
 @import  'variables';
 @import  'mixins';
 
@@ -165,5 +166,55 @@ body, input, textarea, select, button {
 	margin-right: 10px;
 	&.with-icon {
 		margin-right: 40px;
+	}
+}
+
+.select2 {
+	width: 100% !important;
+	.select2-selection {
+		background-color: rgba(255, 255, 255, 0.1);
+		border: none;
+		border-radius: 3px;
+		padding: 10px;
+		height: auto;
+		outline: none;
+	}
+	.select2-selection__rendered {
+		color: $color-light !important;
+		font-size: 14px;
+		line-height: initial !important;
+	}
+	.select2-selection__arrow {
+		display: none;
+	}
+	.select2-results > .select2-results__options {
+		background-color: $color-darkblue !important;
+	}
+}
+.select2-container {
+	.select2-results {
+		& > .select2-results__options {
+			background-color: $color-darkblue !important;
+			font-size: 14px;
+		}
+	}
+	.select2-dropdown {
+		border: none;
+	}
+	.select2-results__option[aria-selected=true] {
+		background-color: $color-blue !important;
+	}
+	.select2-results__option--highlighted[aria-selected] {
+		background-color: lighten($color-darkblue, 10%);
+	}
+	.select2-search {
+		background-color: $color-darkblue !important;
+	}
+	.select2-search__field {
+		background-color: $color-darkblue !important;
+		border: none !important;
+		outline: none;
+		color: $color-light;
+		font-size: 14px;
 	}
 }
