@@ -50,6 +50,13 @@ $('.data-content #select-all').click(function(event) {
   }
 })
 
+// Datepicker
 $('.own-datepicker').datepicker({
   format: "dd/mm/yyyy"
+})
+
+// Select2
+$('.select2').select2()
+$(".select2-without-search").select2({
+  minimumResultsForSearch: Infinity
 })
