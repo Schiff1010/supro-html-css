@@ -8,7 +8,7 @@
 		color: $color-light;
 		padding-top: 25px;
 		padding-bottom: 25px;
-		background-image: url(../images/pattern.svg);
+		background-image: url(../images/pattern.png);
 		background-size: cover;
 		background-position: center;
 		font-size: 14px;
@@ -76,6 +76,12 @@
 				i.material-icons {
 					float: right;
 					transform: translateY(-2px);
+					&.keep-left {
+						float: initial;
+						transform: initial;
+						margin-right: 10px;
+						opacity: .3;
+					}
 				}
 			}
 		}
@@ -97,7 +103,8 @@
 			&.category {
 				&:hover {
 					.dropdown-category {
-						display: block;
+						visibility: visible;
+						opacity: 1;
 					}
 				}
 			}
@@ -105,28 +112,40 @@
 				position: absolute;
 				width: calc(100% - 10px);
 				border: 1px solid $color-border;
-				display: none;
+				border-top: 0;
+				visibility: hidden;
+				box-shadow: 0 20px 40px rgba(0, 0, 0, .16);
+				opacity: 0;
+				transition: visibility 0s, opacity .2s;
 				a {
 					background-color: $color-light;
 					color: $color-body;
-					border-bottom: 1px solid $color-border;
-					transition: all .2s;
 					&:hover {
 						background-color: $color-gray-light !important;
+						border-color: transparent;
 					}
-				}
-				&:hover {
-					.sub-category {
-						display: block;
+					i.material-icons {
+						opacity: .3;
 					}
 				}
 				.sub-category {
-					display: none;
+					visibility: hidden;
+					opacity: 0;
+					height: calc(100% + 2px);
 					left: calc(100% + 1px);
-					top: -2px;
+					top: -1px;
 					position: absolute;
 					width: 100%;
 					border: 1px solid $color-border !important;
+					border-left: 0 !important;
+					background-color: $color-light;
+					box-shadow: 0 20px 40px rgba(0, 0, 0, .16);
+					transition: visibility 0s, opacity .2s;
+					li {
+						a {
+							border: none;
+						}
+					}
 				}
 			}
 		}
