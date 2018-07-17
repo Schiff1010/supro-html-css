@@ -416,7 +416,7 @@ footer {
 
 	.copyright {
 		margin-top: 30px;
-		border-top: 1px solid $color-gray-light;
+		border-top: 1px solid rgba(0, 0, 0, .1);
 		background-color: $color-light;
 		font-size: 12px;
 		padding-top: 20px;
@@ -430,6 +430,40 @@ footer {
 					filter: grayscale(100%);
 				}
 			}
+		}
+	}
+}
+
+.product-detail {
+	margin-bottom: 50px;
+	h1 {
+		font-size: 24px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	h3 {
+		font-size: 12px;
+		text-transform: uppercase;
+		opacity: .4;
+	}
+	.photo {
+		width: 100%;
+		padding-bottom: 100%;
+		background-size: cover;
+		background-position: cover;
+	}
+	.content {
+		font-size: 14px;
+		line-height: 1.6;
+		font-family: $font-secondary;
+		.title {
+			font-size: 16px;
+			text-transform: capitalize;
+			margin-top: 20px;
+			margin-bottom: 10px;
+		}
+		p {
+			margin-bottom: 10px;
 		}
 	}
 }

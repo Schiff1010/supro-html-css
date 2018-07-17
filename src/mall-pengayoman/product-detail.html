@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Mall Pengayoman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Mall Pengayoman" />
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="assets/css/app.css">
+	<!-- endinject -->
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="top-menu">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="w-left">
+            <a href="index.html" class="a-icon"><img src="assets/images/logo.png" alt="" class="logo"></a>
+          </div>
+          <div class="search">
+            <form action="">
+              <div class="form with-icon">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Temukan produk ...">
+              </div>
+            </form>
+          </div>
+          <div class="w-right text-right">
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="login.html">Masuk</a><span class="span-divider">/</span><a href="signup.html">Daftar</a></li>
+              <li class="list-inline-item">
+                <a href="#" class="a-icon"><i class="material-icons">favorite_border</i></a>
+                <div class="badge">1</div>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="a-icon"><i class="material-icons">shopping_basket</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <div class="container">
+        <div class="d-flex justify-content-start align-items-center">
+          <div class="list-inline-item category w-left">
+            <a href="#">Telusuri Kategori <i class="material-icons">arrow_drop_down</i></a>
+            <ul class="dropdown-category list-unstyled">
+              <li>
+                <a href="">Category 1<i class="material-icons">chevron_right</i></a>
+                <ul class="sub-category list-unstyled">
+                  <li><a href="">Sub Category 1</a></li>
+                  <li><a href="">Sub Category 2</a></li>
+                </ul>
+              </li>
+              <li><a href="">Category 2</a></li>
+              <li>
+                <a href="">Category 3<i class="material-icons">chevron_right</i></a>
+                <ul class="sub-category list-unstyled">
+                  <li><a href="">Sub Category 1</a></li>
+                  <li><a href="">Sub Category 2</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="list-inline-item"><a href="index.html">Beranda</a></div>
+          <div class="list-inline-item active"><a href="product.html">Produk</a></div>
+          <div class="list-inline-item"><a href="blog.html">Blog</a></div>
+          <div class="list-inline-item"><a href="about.html">Tentang Kami</a></div>
+          <div class="list-inline-item ml-auto"><a href="status.html">Status Pesanan</a></div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-detail">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Beranda</a></li>
+        <li>Lorem ipsum dolor sit amet.</li>
+      </ul>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-md-4 product-detail-slide">
+              <div class="owl-carousel">
+                <div class="photo" id="product-1">
+                  <style>
+                    #product-1 {
+                      background-image: url(assets/images/products/1.jpg)
+                    }
+                  </style>
+                </div>
+                
+                <div class="photo" id="product-2">
+                  <style>
+                    #product-2 {
+                      background-image: url(assets/images/products/2.png)
+                    }
+                  </style>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h1>Lorem ipsum dolor sit amet</h1>
+              <h3>Dekorasi Rumah, Souvenir</h3>
+              
+              <div class="content">
+                <div class="title">Deksripsi Produk</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda perferendis, commodi beatae harum dolore repellendus pariatur molestiae nostrum vitae soluta aliquam cumque ipsa quas, provident itaque eum voluptas officiis dolorem optio neque veritatis? Adipisci sed doloribus asperiores quibusdam provident nobis?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda perferendis, commodi beatae harum dolore repellendus pariatur molestiae nostrum vitae soluta aliquam cumque ipsa quas, provident itaque eum voluptas officiis dolorem optio neque veritatis? Adipisci sed doloribus asperiores quibusdam provident nobis?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product pb-0">
+    <div class="container">
+      <h2 class="title">Produk Terbaru</h2>
+
+      <div class="row owl-carousel">
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-1"></div></a>
+          <style>
+            #img-1 {
+              background-image: url(assets/images/products/1.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-2"></div></a>
+          <style>
+            #img-2 {
+              background-image: url(assets/images/products/2.png);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-3"></div></a>
+          <style>
+            #img-3 {
+              background-image: url(assets/images/products/3.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-4"></div></a>
+          <style>
+            #img-4 {
+              background-image: url(assets/images/products/4.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-5"></div></a>
+          <style>
+            #img-5 {
+              background-image: url(assets/images/products/5.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-6"></div></a>
+          <style>
+            #img-6 {
+              background-image: url(assets/images/products/6.png);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-7"></div></a>
+          <style>
+            #img-7 {
+              background-image: url(assets/images/products/7.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-8"></div></a>
+          <style>
+            #img-8 {
+              background-image: url(assets/images/products/8.png);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+
+        <div class="item">
+          <a href="product-detail.html"><div class="img" id="img-9"></div></a>
+          <style>
+            #img-9 {
+              background-image: url(assets/images/products/1.jpg);
+            }
+          </style>
+          <h3 class="name"><a href="product-detail.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <div class="tag">Souvenir</div>
+          <div class="price">Rp. 75.000</div>
+        </div>
+        
+        <div class="item ml-auto mr-auto mb-auto">
+          <div class="more">
+            <a href="">
+              <i class="material-icons">arrow_right_alt</i>
+              <h3 class="name">Lihat semua</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h3>Pengayoman Mall</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Produk</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Tentang Kami</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-2">
+          <h3>Beli</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Cara Belanja</a></li>
+            <li><a href="">Pembayaran</a></li>
+            <li><a href="">Pengembalian Dana</a></li>
+            <li><a href="">Status Pemesanan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-2">
+          <h3>Bantuan</h3>
+          <ul class="list-unstyled">
+            <li><a href="">Syarat dan Ketentuan</a></li>
+            <li><a href="">Kebijakan Privasi</a></li>
+            <li><a href="">Hubungi Kami</a></li>
+            <li><a href="">Penduan Keamanan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 subscribe">
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Alamat email" aria-label="Alamat email" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-danger" type="button" id="button-addon2">Berlangganan</button>
+              </div>
+            </div>
+          </form>
+          <div class="row">
+            <div class="col-md-7">
+              <h4>Jasa Pengiriman</h4>
+              <img src="assets/images/delivery/collection.png" alt="">
+            </div>
+            <div class="col-md-5">
+              <h4>Metode Pembayaran</h4>
+              <img src="assets/images/payment/bni.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>© Pengayomanmall 2018</div>
+          <div>
+            <ul class="list-inline sosmed">
+              <li class="list-inline-item"><a href="" class="a-icon"><img src="assets/images/sosmed/fb.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="" class="a-icon"><img src="assets/images/sosmed/twitter.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="" class="a-icon"><img src="assets/images/sosmed/instagram.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="" class="a-icon"><img src="assets/images/sosmed/youtube.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+	<!-- inject:js -->
+	<script src="assets/scripts/libraries.js"></script>
+	<script src="assets/scripts/app.js"></script>
+	<!-- endinject -->
+
+</body>
+
+</html>

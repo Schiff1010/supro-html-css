@@ -250,3 +250,25 @@ body, input, textarea, select, button {
 		float: left;
 	}
 }
+
+.breadcrumb {
+	background-color: $color-light;
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 14px;
+	li {
+		color: rgba(0, 0, 0, .4);
+		&:after {
+			content: '/';
+			margin-left: 10px;
+			margin-right: 10px;
+			opacity: .3;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
