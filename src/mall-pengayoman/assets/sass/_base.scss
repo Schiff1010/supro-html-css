@@ -272,3 +272,22 @@ body, input, textarea, select, button {
 		}
 	}
 }
+
+.btn {
+	&-primary {
+		background-color: $color-primary;
+		border-color: $color-primary;
+		&:hover, &:focus, &:active {
+			background-color: $color-primary !important;
+			border-color: $color-primary !important;
+		}
+	}
+	&-outline-primary {
+		color: $color-primary;
+		border-color: $color-primary;
+		&:hover, &:focus, &:active {
+			background-color: $color-primary !important;
+			border-color: $color-primary !important;
+		}
+	}
+}

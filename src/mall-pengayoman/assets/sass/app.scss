@@ -436,6 +436,20 @@ footer {
 
 .product-detail {
 	margin-bottom: 50px;
+	.stars {
+		font-size: 14px;
+		margin-bottom: 10px;
+		i.material-icons {
+			font-size: 18px;
+			color: $color-yellow;
+			vertical-align: middle;
+		}
+		span {
+			margin-left: 10px;
+			vertical-align: middle;
+			opacity: .5;
+		}
+	}
 	h1 {
 		font-size: 24px;
 		font-weight: bold;
@@ -446,11 +460,130 @@ footer {
 		text-transform: uppercase;
 		opacity: .4;
 	}
+	.widgets {
+		& > div {
+			margin-bottom: 15px;
+		}
+		.price {
+			background-color: rgba(0, 0, 0, .03);
+			border: 1px solid $color-border;
+			padding: 10px;
+			text-align: center;
+			b {
+				font-weight: bold;
+				color: $color-primary;
+				font-size: 28px;
+			}
+		}
+		.actions {
+			.btn-block {
+				border-radius: 0;
+				font-size: 14px;
+				padding-top: 12px;
+				padding-bottom: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-bottom: 15px;
+				&.btn-primary {
+					i.material-icons {
+						margin-right: 10px;
+						color: lighten($color-yellow, 10%);
+					}
+				}
+				&.btn-sm {
+					font-size: 12px;
+					color: lighten($color-body, 30%);
+					border-color: $color-border;
+					padding-top: 8px;
+					padding-bottom: 8px;
+					text-transform: initial;
+					i.material-icons {
+						font-size: 18px;
+						margin-right: 10px;
+						color: $color-border;
+					}
+				}
+			}
+		}
+		.info {
+			border: 1px solid $color-border;
+			.head {
+				background-color: lighten($color-border, 15%);
+				color: lighten($color-body, 25%);
+				padding: 7px 10px;
+				font-size: 14px;
+			}
+			.content {
+				li {
+					border-top: 1px solid $color-border;
+					padding: 10px;
+					i.material-icons {
+						margin-right: 10px;
+						color: $color-border;
+					}
+				}
+				.btn-primary {
+					padding-top: 10px;
+					padding-bottom: 10px;
+					i.material-icons {
+						color: $color-light;
+					}
+				}
+				.sosmed {
+					& > div {
+						margin-right: 10px;
+						img {
+							height: 20px;
+							-webkit-filter: grayscale(100%);
+							filter: grayscale(100%);
+						}
+					}
+				}
+				.logo {
+					align-items: flex-start;
+					a {
+						display: block;
+						text-align: center;
+						img {
+							width: 40%;
+							margin: 20px auto;
+						}
+					}
+				}
+				.table {
+					margin-top: 10px;
+					margin-bottom: 0;
+					td {
+						padding-left: 0;
+						padding-top: 5px;
+						padding-bottom: 5px;
+						img {
+							width: 50px;
+						}
+					}
+				}
+			}
+		}
+	}
 	.photo {
 		width: 100%;
 		padding-bottom: 100%;
 		background-size: cover;
 		background-position: cover;
+	}
+	.carousel-indicators {
+		bottom: -55px;
+		margin: 0;
+		.img-thumb {
+			width: 50px;
+			height: 50px;
+			background-position: center;
+			background-size: cover;
+			transition: all .1s;
+			&.active {
+				border: 5px solid $color-primary;
+			}
+		}
 	}
 	.content {
 		font-size: 14px;
@@ -465,5 +598,35 @@ footer {
 		p {
 			margin-bottom: 10px;
 		}
+	}
+}
+
+.story {
+	.title {
+		text-transform: capitalize;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	h2 {
+		font-size: 24px;
+		line-height: 1.6;
+		font-family: $font-secondary;
+		margin-bottom: 20px;
+	}
+	img {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.content {
+		font-family: $font-secondary;
+		p {
+			margin-bottom: 15px;
+			font-size: 16px;
+			text-indent: 35px;
+		}
+	}
+	.date {
+		font-size: 14px;
+		opacity: .5;
 	}
 }

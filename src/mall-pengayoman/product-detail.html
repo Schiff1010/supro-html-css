@@ -87,25 +87,110 @@
         <div class="col-md-9">
           <div class="row">
             <div class="col-md-4 product-detail-slide">
-              <div class="owl-carousel">
-                <div class="photo" id="product-1">
-                  <style>
-                    #product-1 {
-                      background-image: url(assets/images/products/1.jpg)
-                    }
-                  </style>
+              <div id="productDetailSlide" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#productDetailSlide" data-slide-to="0" id="img-thumb-1" class="img-thumb active">
+                    <style>
+                      #img-thumb-1 {
+                        background-image: url(assets/images/products/1.jpg)
+                      }
+                    </style>
+                  </li>
+                  <li data-target="#productDetailSlide" data-slide-to="1" id="img-thumb-2" class="img-thumb">
+                    <style>
+                      #img-thumb-2 {
+                        background-image: url(assets/images/products/2.png)
+                      }
+                    </style>
+                  </li>
+                  <li data-target="#productDetailSlide" data-slide-to="2" id="img-thumb-3" class="img-thumb">
+                    <style>
+                      #img-thumb-3 {
+                        background-image: url(assets/images/products/3.jpg)
+                      }
+                    </style>
+                  </li>
+                  <li data-target="#productDetailSlide" data-slide-to="3" id="img-thumb-4" class="img-thumb">
+                    <style>
+                      #img-thumb-4 {
+                        background-image: url(assets/images/products/4.jpg)
+                      }
+                    </style>
+                  </li>
+                  <li data-target="#productDetailSlide" data-slide-to="4" id="img-thumb-5" class="img-thumb">
+                    <style>
+                      #img-thumb-5 {
+                        background-image: url(assets/images/products/5.jpg)
+                      }
+                    </style>
+                  </li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="photo" id="product-1">
+                      <style>
+                        #product-1 {
+                          background-image: url(assets/images/products/1.jpg)
+                        }
+                      </style>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="photo" id="product-2">
+                      <style>
+                        #product-2 {
+                          background-image: url(assets/images/products/2.png)
+                        }
+                      </style>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="photo" id="product-3">
+                      <style>
+                        #product-3 {
+                          background-image: url(assets/images/products/3.jpg)
+                        }
+                      </style>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="photo" id="product-4">
+                      <style>
+                        #product-4 {
+                          background-image: url(assets/images/products/4.jpg)
+                        }
+                      </style>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="photo" id="product-5">
+                      <style>
+                        #product-5 {
+                          background-image: url(assets/images/products/5.jpg)
+                        }
+                      </style>
+                    </div>
+                  </div>
                 </div>
-                
-                <div class="photo" id="product-2">
-                  <style>
-                    #product-2 {
-                      background-image: url(assets/images/products/2.png)
-                    }
-                  </style>
-                </div>
+                <a class="carousel-control-prev" href="#productDetailSlide" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#productDetailSlide" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
             </div>
             <div class="col-md-8">
+              <div class="stars">
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <i class="material-icons">star</i>
+                <span>42 Ulasan</span>
+              </div>
               <h1>Lorem ipsum dolor sit amet</h1>
               <h3>Dekorasi Rumah, Souvenir</h3>
               
@@ -116,8 +201,110 @@
               </div>
             </div>
           </div>
+
+          <hr>
+
+          <div class="row story">
+            <div class="col-md-12">
+              <div class="title">Cerita Kerajinan</div>
+              <h2>Tangan kecilku berusaha membuat pot bunga dari tanah liat yang ada dibelakang lapas.</h2>
+              <img src="assets/images/products/9.jpg" alt="">
+              <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aspernatur molestias consequuntur iusto velit consectetur? Corporis, provident eaque? Possimus dolor nostrum architecto similique odio iste corporis voluptates facere est a optio, illum amet, deleniti repudiandae autem quisquam iure et tempore repellat! Quia eaque omnis cum corrupti sed veritatis nihil consequuntur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At aspernatur molestias consequuntur iusto velit consectetur? Corporis, provident eaque? Possimus dolor nostrum architecto similique odio iste corporis voluptates facere est a optio, illum amet, deleniti repudiandae autem quisquam iure et tempore repellat! Quia eaque omnis cum corrupti sed veritatis nihil consequuntur.</p>
+              </div>
+              <div class="date">12 Januari 2018 / Oleh <b>Samil Salam</b></div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-3"></div>
+
+        <div class="col-md-3">
+          <div class="widgets">
+            <div class="price">
+              <b>Rp. 75.000</b>
+            </div>
+            <div class="actions">
+              <div class="btn btn-primary btn-block"><i class="material-icons">shopping_cart</i>Beli Sekarang</div>
+              <div class="btn btn-outline-primary btn-block">Tambah ke keranjang</div>
+              <div class="btn btn-default btn-block btn-sm"><i class="material-icons">favorite</i>Tambah ke Favorit</div>
+            </div>
+            <div class="info">
+              <div class="head">Informasi Produk</div>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-start">
+                    <div><i class="material-icons">face</i></div>
+                    <div>Dilihat</div>
+                    <div class="ml-auto">230</div>
+                  </li>
+                  <li class="d-flex justify-content-start">
+                    <div><i class="material-icons">assignment_turned_in</i></div>
+                    <div>Terjual</div>
+                    <div class="ml-auto">230</div>
+                  </li>
+                  <li class="d-flex justify-content-start">
+                    <div><i class="material-icons">work</i></div>
+                    <div>Stok</div>
+                    <div class="ml-auto">230</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="info">
+              <div class="head">Informasi Toko</div>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li class="logo">
+                    <a href="" class="a-icon"><img src="assets/images/store/dtc.png" alt="Logo Store"></a><br>
+                    <a href="" class="btn btn-primary btn-block"><i class="material-icons">chat</i> Chat Toko</a>
+                  </li>
+                  <li>
+                    <b>Catatan Toko</b><br>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit temporibus blanditiis itaque!</p>
+                  </li>
+                  <li>
+                    <b>Dukungan Pengiriman</b><br>
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <td><img src="assets/images/delivery/jne.png" alt=""> &nbsp;</td>
+                          <td><span>Regular, YES</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="assets/images/delivery/tiki.png" alt=""> &nbsp;</td>
+                          <td><span>Regular, YES</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="assets/images/delivery/gosend.png" alt=""> &nbsp;</td>
+                          <td><span>Same day, instant courier</span></td>
+                        </tr>
+                        <tr>
+                          <td><img src="assets/images/delivery/grab.png" alt=""> &nbsp;</td>
+                          <td><span>Instant</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info">
+              <div class="head">Bagikan</div>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li class="d-flex justify-content-start sosmed">
+                    <div><a href="" class="a-icon"><img src="assets/images/sosmed/fb.png" alt=""></a></div>
+                    <div><a href="" class="a-icon"><img src="assets/images/sosmed/twitter.png" alt=""></a></div>
+                    <div><a href="" class="a-icon"><img src="assets/images/sosmed/instagram.png" alt=""></a></div>
+                    <div><a href="" class="a-icon"><img src="assets/images/sosmed/youtube.png" alt=""></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
