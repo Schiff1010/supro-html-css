@@ -33,6 +33,12 @@
 	&:hover {
 		box-shadow: 0 20px 40px rgba(0,0,0,.1);		
 	}
+	&-default {
+		color: $color-light;
+	}
+	&-round {
+		border-radius: 100px;
+	}
 	&-line {
 		border: 2px solid;
 		background-color: transparent;
@@ -437,8 +443,17 @@ section.dashboard {
 				}
 			}
 			&.open {
+				background-color: darken($color-darkblue, 10%);
+				i.material-icons:not(.float-right) {
+					opacity: 1;
+				}
 				.aside-dropdown-menu {
 					display: block;
+					li:not(.active) {
+						a {
+							background-color: darken($color-darkblue, 10%);
+						}
+					}
 				}
 			}
 			.aside-dropdown-menu {

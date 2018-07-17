@@ -8045,6 +8045,10 @@ body, input, textarea, select, button {
   .btn:hover {
     -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); }
+  .btn-default {
+    color: #fff; }
+  .btn-round {
+    border-radius: 100px; }
   .btn-line {
     border: 2px solid;
     background-color: transparent;
@@ -8374,8 +8378,14 @@ section.dashboard {
         color: #fff; }
         .nav-aside .list li.active a i {
           opacity: 1; }
-      .nav-aside .list li.open .aside-dropdown-menu {
-        display: block; }
+      .nav-aside .list li.open {
+        background-color: #090c14; }
+        .nav-aside .list li.open i.material-icons:not(.float-right) {
+          opacity: 1; }
+        .nav-aside .list li.open .aside-dropdown-menu {
+          display: block; }
+          .nav-aside .list li.open .aside-dropdown-menu li:not(.active) a {
+            background-color: #090c14; }
       .nav-aside .list li .aside-dropdown-menu {
         background-color: #0f1423;
         display: none; }
