@@ -57,6 +57,13 @@ $('.own-datepicker').datepicker({
 
 // Select2
 $('.select2').select2()
-$(".select2-without-search").select2({
+$('.select2-without-search').select2({
   minimumResultsForSearch: Infinity
+})
+
+// Nav scroll
+$('.nav-aside').niceScroll({
+  cursorborder: 0,
+  cursorcolor: '#fff',
+  cursorwidth: '3px'
 })

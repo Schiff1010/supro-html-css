@@ -405,6 +405,7 @@ section.dashboard {
 	left: 0;
 	width: 250px;
 	height: 100vh;
+	overflow-y: auto;
 	background-color: darken($color-darkblue, 4%);
 	padding: 20px 30px;
 	transition: all .2s;
