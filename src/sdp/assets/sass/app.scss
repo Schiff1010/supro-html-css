@@ -28,10 +28,14 @@
 	transition: all .2s;
 	outline: none;
 	i {
-		opacity: .4;
+		transition: all .2s;
+		opacity: .5;
 	}
 	&:hover {
-		box-shadow: 0 20px 40px rgba(0,0,0,.1);		
+		box-shadow: 0 20px 40px rgba(0,0,0,.1);
+		i {
+			opacity: 1;
+		}	
 	}
 	&-default {
 		color: $color-light;
@@ -80,22 +84,22 @@
 	&-green {
 		background-color: $color-green;
 		color: $color-light;
-		i {
-			opacity: .8;
+		&:hover {
+			background-color: darken($color-green, 5%);
 		}
 	}
 	&-red {
 		background-color: $color-red;
 		color: $color-light;
-		i {
-			opacity: .8;
+		&:hover {
+			background-color: darken($color-red, 5%);
 		}
 	}
 	&-common {
 		background-color: rgba(255,255,255,.1);
 		color: $color-light;
 		&:hover {
-			background-color: rgba(255,255,255,.1);
+			background-color: rgba(255,255,255,.2);
 		}
 	}
 }
@@ -443,7 +447,7 @@ section.dashboard {
 				}
 			}
 			&.open {
-				background-color: darken($color-darkblue, 10%);
+				background-color: darken($color-darkblue, 6%);
 				i.material-icons:not(.float-right) {
 					opacity: 1;
 				}
@@ -451,7 +455,7 @@ section.dashboard {
 					display: block;
 					li:not(.active) {
 						a {
-							background-color: darken($color-darkblue, 10%);
+							background-color: darken($color-darkblue, 6%);
 						}
 					}
 				}
@@ -495,6 +499,18 @@ section.content {
 
 	.search {
 		margin-bottom: 30px;
+		&.search-single {
+			.panel {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				&-filter {
+					padding: 12px;
+				}
+			}
+			.input-group {
+				border-bottom: 0;
+			}
+		}
 		.col-md-9 {
 			padding-left: 0;
 			@media (max-width: 767px) {
@@ -540,7 +556,7 @@ section.content {
 				display: inline-block;
 				padding-right: 10px;
 				margin-right: 20px;
-				margin-top: 15px;
+				margin-top: 18px;
 				& > a i {
 					opacity: .2 !important;
 				}

@@ -23,6 +23,7 @@ html, body {
 
 a {
 	color: $color-blue;
+	cursor: pointer;
 	&:hover, &:focus {
 		color: inherit;
 	}
@@ -205,7 +206,7 @@ body, input, textarea, select, button {
 		border: none;
 	}
 	.select2-results__option[aria-selected=true] {
-		background-color: $color-blue !important;
+		background-color: $color-green !important;
 	}
 	.select2-results__option--highlighted[aria-selected] {
 		background-color: lighten($color-darkblue, 10%);
@@ -220,4 +221,76 @@ body, input, textarea, select, button {
 		color: $color-light;
 		font-size: 14px;
 	}
+}
+
+.dropdown.form-control {
+	font-size: 14px;
+	padding-top: 7px !important;
+	padding-bottom: 10px !important;
+	a {
+		padding-left: 5px;
+		display: block;
+		* {
+			vertical-align: middle;
+		}
+		i.material-icons {
+			color: rgba(255, 255, 255, 0.3);
+			font-size: 20px;
+			float: right;
+			margin-top: 2px;
+			margin-right: -3px;
+		}
+	}
+	.dropdown-menu {
+		width: 100%;
+	}
+}
+
+.ui-menu {
+	border: 0 !important;
+	border-radius: 3px;
+	background-color: transparent !important;
+	.ui-menu-item {
+		&:first-child {
+			margin-top: 10px !important;
+		}
+		list-style: none;
+		background-color: lighten($color-darkblue, 5%);
+		color: $color-light;
+		.ui-menu-item-wrapper {
+			padding: 10px;
+			.id {
+				opacity: .5;
+				font-size: 12px;
+			}
+			.name {
+				display: inline-block;
+				width: 40%;
+			}
+			.status {
+				float: right;
+				color: $color-green;
+				font-size: 12px;
+				&.not-active {
+					color: $color-red;
+				}
+			}
+		}
+		.ui-state-active {
+			background-color: $color-green !important;
+			border-color: transparent !important;
+			&:hover, &:active, &:visited, &:focus {
+				border-color: transparent !important;
+				background-color: $color-green !important;
+			}
+			span {
+				color: $color-light !important;
+			}
+		}
+	}
+}
+
+.panel-collapse {
+	background-color: darken($color-darkblue, 4%);
+	border-radius: 3px;
 }

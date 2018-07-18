@@ -17,7 +17,7 @@ $('.toggle-aside').click(function() {
 })
 
 // Dropdown avoid close
-$('li.dropdown-noclose a').on('click', function (e) {
+$('.dropdown-noclose a').on('click', function (e) {
   var element = $(this).parent()
   if (element.find('.dropdown-menu').hasClass('show') === true) {
     $('.dropdown-menu').removeClass('show')
