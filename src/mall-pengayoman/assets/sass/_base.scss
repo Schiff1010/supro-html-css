@@ -291,3 +291,12 @@ body, input, textarea, select, button {
 		}
 	}
 }
+
+.progress {
+	height: 5px;
+	.progress-bar {
+		&-yellow {
+			background-color: $color-yellow;
+		}
+	}
+}

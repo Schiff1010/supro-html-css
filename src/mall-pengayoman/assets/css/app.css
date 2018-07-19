@@ -7448,6 +7448,11 @@ body, input, textarea, select, button {
     background-color: #EF3F61 !important;
     border-color: #EF3F61 !important; }
 
+.progress {
+  height: 5px; }
+  .progress .progress-bar-yellow {
+    background-color: #FFBD07; }
+
 #navigation .top-menu {
   background-color: #EF3F61;
   color: #FFFFFF;
@@ -7962,3 +7967,74 @@ footer {
 .story .date {
   font-size: 14px;
   opacity: .5; }
+
+.ulasan {
+  margin-top: 50px; }
+  .ulasan .result {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #CECECE; }
+    .ulasan .result h3 {
+      font-size: 60px;
+      color: #363636;
+      opacity: 1; }
+      .ulasan .result h3 small {
+        font-size: 18px;
+        margin-left: 10px;
+        opacity: .5; }
+    .ulasan .result p {
+      font-size: 14px;
+      opacity: .5; }
+    .ulasan .result h6 {
+      font-size: 14px;
+      margin-bottom: 10px; }
+    .ulasan .result .quality li {
+      position: relative; }
+      .ulasan .result .quality li .stars {
+        display: inline-block;
+        width: 31px;
+        text-align: right; }
+      .ulasan .result .quality li .progress-star {
+        width: 70%;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        vertical-align: middle; }
+      .ulasan .result .quality li .number {
+        font-size: 12px;
+        display: inline-block;
+        opacity: .5; }
+  .ulasan .comments h6 {
+    margin-bottom: 20px; }
+  .ulasan .comments .comment {
+    border: 1px solid #CECECE;
+    padding: 20px;
+    margin-bottom: 20px; }
+    .ulasan .comments .comment .buyer {
+      margin-bottom: 10px; }
+      .ulasan .comments .comment .buyer img {
+        width: 50px;
+        -ms-flex-item-align: start;
+            align-self: flex-start; }
+      .ulasan .comments .comment .buyer .name {
+        font-size: 14px;
+        margin-left: 20px; }
+        .ulasan .comments .comment .buyer .name .date {
+          font-size: 12px;
+          font-family: "Muli", sans-serif;
+          opacity: .5; }
+        .ulasan .comments .comment .buyer .name .badge {
+          background-color: #EF3F61;
+          color: #FFFFFF;
+          border-radius: 50px;
+          padding-left: 10px;
+          padding-right: 10px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          vertical-align: middle;
+          margin-left: 10px; }
+    .ulasan .comments .comment p {
+      font-family: "Muli", sans-serif;
+      font-size: 14px; }

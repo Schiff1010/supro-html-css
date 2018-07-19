@@ -630,3 +630,95 @@ footer {
 		opacity: .5;
 	}
 }
+
+.ulasan {
+	margin-top: 50px;
+	.result {
+		margin-top: 20px;
+		margin-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border: 1px solid $color-border;
+		h3 {
+			font-size: 60px;
+			color: $color-body;
+			opacity: 1;
+			small {
+				font-size: 18px;
+				margin-left: 10px;
+				opacity: .5;
+			}
+		}
+		p {
+			font-size: 14px;
+			opacity: .5;
+		}
+		h6 {
+			font-size: 14px;
+			margin-bottom: 10px;
+		}
+		.quality {
+			li {
+				position: relative;
+				.stars {
+					display: inline-block;
+					width: 31px;
+					text-align: right;
+				}
+				.progress-star {
+					width: 70%;
+					display: inline-block;
+					padding-left: 10px;
+					padding-right: 10px;
+					vertical-align: middle;
+				}
+				.number {
+					font-size: 12px;
+					display: inline-block;
+					opacity: .5;
+				}
+			}
+		}
+	}
+	.comments {
+		h6 {
+			margin-bottom: 20px;
+		}
+		.comment {
+			border: 1px solid $color-border;
+			padding: 20px;
+			margin-bottom: 20px;
+			.buyer {
+				margin-bottom: 10px;
+				img {
+					width: 50px;
+					align-self: flex-start;
+				}
+				.name {
+					font-size: 14px;
+					margin-left: 20px;
+					.date {
+						font-size: 12px;
+						font-family: $font-secondary;
+						opacity: .5;
+					}
+					.badge {
+						background-color: $color-primary;
+						color: $color-light;
+						border-radius: 50px;
+						padding-left: 10px;
+						padding-right: 10px;
+						padding-top: 3px;
+						padding-bottom: 3px;
+						vertical-align: middle;
+						margin-left: 10px;
+					}
+				}
+			}
+			p {
+				font-family: $font-secondary;
+				font-size: 14px;
+			}
+		}
+	}
+}
