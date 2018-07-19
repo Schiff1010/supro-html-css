@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="assets/css/app.css">
 	<!-- endinject -->
 </head>
-<body class="bg-darkblue">
+<body class="bg-darkblue theme-red no-sidebar">
 
 	<nav class="nav">
 		<div class="mr-auto">
@@ -24,7 +24,7 @@
 				<i class="material-icons">apps</i>
 			</div>
 			<div class="item">
-				<div class="title">Menu SDP</div>
+				<div class="title">Dashboard Executive</div>
 			</div>
 			<div class="item help">
 				<a href="" title="Bantuan"><i class="material-icons">help_outline</i></a>
@@ -51,102 +51,271 @@
 			</div>
 		</div>
 	</nav>
+  
+  <section class="content dashboard-executive">
+    <div class="data">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="tile">
+              <div class="d-flex justify-content-between align-item-center">
+                <div>
+                  <div class="label">Jumlah WBP</div>
+                  <div class="count">750 orang</div>
+                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
+                </div>
+                <div>
+                  <canvas id="wbp-chart" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
 
-	<section class="dashboard">
-		<div class="container">
-			<div class="row flex">
+          <div class="col-md-4">
+            <div class="tile">
+              <div class="d-flex justify-content-between align-item-center">
+                <div>
+                  <div class="label">Usulan Remisi</div>
+                  <div class="count">640 orang</div>
+                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
+                </div>
+                <div>
+                  <canvas id="usulan-remisi-chart" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<div class="col-md-4">
-					<a href="" class="item">
-						<h3 class="title">Dashboard</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Dashboard Eksekutif.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+          <div class="col-md-4">
+            <div class="tile">
+              <div class="d-flex justify-content-between align-item-center">
+                <div>
+                  <div class="label">Mendapat Remisi</div>
+                  <div class="count">200 orang</div>
+                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
+                </div>
+                <div>
+                  <canvas id="remisi-chart" width="100" height="100"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				<div class="col-md-4">
-					<a href="remisi-daftar-usulan.html" class="item">
-						<h3 class="title">Remisi Online</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum assumenda ad, quae ducimus earum aliquam.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Remisi Online.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+        </div>
 
-				<div class="col-md-4">
-					<a href="" class="item">
-						<h3 class="title">Integrasi Online</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Integrasi Online.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="table-responsive">
+              <table class="table panel">
+                <thead>
+                  <tr>
+                    <th colspan="100" class="title">
+                      <div class="d-flex justify-content-between">
+                        <h3>Data Usulan Remisi</h3>
+                        <a href="">Lihat semua <i class="material-icons">arrow_right_alt</i></a>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <th><a href="#">Nama WBP<i class="material-icons float-right">unfold_more</i></a></th>
+                    <th><a href="#">Jenis Kejahatan<i class="material-icons float-right">unfold_more</i></a></th>
+                    <th><a href="#">Tgl. Expirasi<i class="material-icons float-right">unfold_more</i></a></th>
+                    <th><a href="#">Besaran Remisi<i class="material-icons float-right">unfold_more</i></a></th>
+                    <th><a href="#">Jenis Remisi<i class="material-icons float-right">unfold_more</i></a></th>
+                  </tr>
+                </thead>
 
-				<div class="col-md-4">
-					<a href="" class="item">
-						<h3 class="title">Sidang TPP</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Sidang TPP.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+                <tbody>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="">Rusli Arnis</a></td>
+                    <td>Narkotika</td>
+                    <td>02/06/2020</td>
+                    <td>15 hari, 1 Bulan</td>
+                    <td>Hari Raya keagamaan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
 
-				<div class="col-md-4">
-					<a href="" class="item">
-						<h3 class="title">Verifikasi Usulan</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Verifikasi Usulan.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+          <div class="col-md-4">
+            <div class="table-responsive map-wbp">
+              <table class="table panel">
+                <thead>
+                  <tr>
+                    <th colspan="100" class="title">
+                      <h3>Peta Jumlah WBP</h3>
+                    </th>
+                  </tr>
+                </thead>
 
-				<div class="col-md-4">
-					<a href="" class="item">
-						<h3 class="title">Persetujuan Usulan</h3>
-						<div class="row">
-							<div class="col-8">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-							</div>
-							<div class="col-4">
-								<img src="assets/images/Persetujuan Usulan.svg" alt="">
-							</div>
-						</div>
-					</a>
-				</div>
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      <img src="assets/images/map.png" alt="" width="100%">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-red"></div> DKI Jakarta</td>
+                    <td class="text-right">200 orang</td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-green"></div> Makassar</td>
+                    <td class="text-right">120 orang</td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-blue"></div> Aceh</td>
+                    <td class="text-right">23 orang</td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-purple"></div> Bandung</td>
+                    <td class="text-right">12 orang</td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-yellow"></div> Malang</td>
+                    <td class="text-right">21 orang</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 
-			</div>
-		</div>
-	</section>
+      </div>
+    </div>
+  </section>
   
 	<!-- inject:js -->
 	<script src="assets/scripts/libraries.js"></script>
 	<script src="assets/scripts/app.js"></script>
-	<!-- endinject -->
+  <!-- endinject -->
+  <script>
+    $(function () {
+      var element = $('#wbp-chart');
+      var chart = new Chart(element, {
+        type: 'pie',
+        data: {
+          datasets: [{
+            backgroundColor: ['#0062CF', '#05B044', '#CF6428', '#AB07CF', '#C33737'],
+            borderWidth: 0,
+            data: [50, 10, 5, 5, 2]
+          }],
+  
+          // These labels appear in the legend and in the tooltips when hovering different arcs
+          labels: [
+            'Belum Diusulkan',
+            'Diusulkan Remisi',
+            'Tidak Berhak Mendapat Remisi',
+            'Baru Putus/ Berkas Belum Lengkap',
+            'TAH'
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      })
+    });
+
+    $(function () {
+      var element = $('#usulan-remisi-chart');
+      var chart = new Chart(element, {
+        type: 'pie',
+        data: {
+          datasets: [{
+            backgroundColor: ['#0062CF', '#05B044'],
+            borderWidth: 0,
+            data: [50, 10]
+          }],
+  
+          // These labels appear in the legend and in the tooltips when hovering different arcs
+          labels: [
+            'Belum Diusulkan',
+            'Diusulkan Remisi'
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      })
+    });
+
+    $(function () {
+      var element = $('#remisi-chart');
+      var chart = new Chart(element, {
+        type: 'pie',
+        data: {
+          datasets: [{
+            backgroundColor: ['#0062CF', '#05B044'],
+            borderWidth: 0,
+            data: [5, 50]
+          }],
+  
+          // These labels appear in the legend and in the tooltips when hovering different arcs
+          labels: [
+            'Belum Diusulkan',
+            'Diusulkan Remisi'
+          ]
+        },
+        options: {
+          legend: {
+            display: false
+          }
+        }
+      })
+    });
+  </script>
 </body>
 </html>

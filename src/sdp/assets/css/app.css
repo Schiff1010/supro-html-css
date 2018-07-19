@@ -7954,6 +7954,11 @@ body, input, textarea, select, button {
       color: rgba(255, 255, 255, 0.3);
       margin-left: -35px;
       font-size: 20px; }
+  .select-group.select-outline select, .select-group.select-outline .select2-selection {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1); }
+  .select-group.select-outline .validate-error {
+    margin-top: -30px; }
 
 .w-100p {
   width: 100%; }
@@ -7964,7 +7969,7 @@ body, input, textarea, select, button {
 .separator {
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
   margin-top: 20px;
   margin-bottom: 20px; }
 
@@ -8773,3 +8778,76 @@ section.detail {
 .form-control-confirm {
   font-size: 30px;
   letter-spacing: 3px; }
+
+.theme-red .nav-app .help a, .theme-red .nav .help a {
+  color: #D24343; }
+
+.theme-red .nav-app .title:after, .theme-red .nav .title:after {
+  background-color: #D24343; }
+
+.theme-red .nav-aside .list li.active a {
+  background-color: #D24343; }
+
+.theme-red section.content .search .quick-filter a .badge {
+  background-color: #D24343; }
+
+.theme-red .table tbody td a {
+  color: #D24343; }
+
+.no-sidebar .content {
+  padding-left: 30px; }
+
+.dashboard-executive .tile {
+  border-radius: 3px;
+  background-color: #12182a;
+  padding: 20px;
+  margin-bottom: 25px; }
+  .dashboard-executive .tile .label {
+    opacity: .5;
+    margin-bottom: 18px; }
+  .dashboard-executive .tile .count {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  .dashboard-executive .tile a {
+    color: #D24343;
+    font-size: 14px; }
+    .dashboard-executive .tile a:hover {
+      text-decoration: none; }
+  .dashboard-executive .tile canvas {
+    margin-top: 15px; }
+
+.dashboard-executive .table .title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 20px; }
+  .dashboard-executive .table .title a {
+    color: #D24343;
+    vertical-align: bottom; }
+
+.dashboard-executive .table th:first-child, .dashboard-executive .table td:first-child {
+  padding-left: 20px; }
+
+.dashboard-executive .table th:last-child, .dashboard-executive .table td:last-child {
+  padding-right: 20px; }
+
+.dashboard-executive .table tr:last-child td {
+  border-color: transparent; }
+
+.dashboard-executive .map-wbp .point {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  display: inline-block;
+  background-color: transparent;
+  border: 3px solid #026DD5;
+  border-radius: 50%;
+  margin-right: 10px; }
+  .dashboard-executive .map-wbp .point-red {
+    border-color: #D24343; }
+  .dashboard-executive .map-wbp .point-green {
+    border-color: #00B94D; }
+  .dashboard-executive .map-wbp .point-purple {
+    border-color: #AB07CF; }
+  .dashboard-executive .map-wbp .point-yellow {
+    border-color: #B6972D; }

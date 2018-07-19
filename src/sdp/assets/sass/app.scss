@@ -924,3 +924,105 @@ section.detail {
 	font-size: 30px;
 	letter-spacing: 3px;
 }
+
+.theme-red {
+	.nav-app, .nav {
+		.help a {
+			color: $color-red;
+		}
+		.title:after {
+			background-color: $color-red;
+		}
+	}
+	.nav-aside .list li.active a {
+		background-color: $color-red;
+	}
+	section.content .search .quick-filter a .badge {
+		background-color: $color-red;
+	}
+	.table tbody td a {
+		color: $color-red;
+	}
+}
+
+.no-sidebar {
+	.content {
+		padding-left: 30px;
+	}
+}
+
+.dashboard-executive {
+	.tile {
+		border-radius: 3px;
+		background-color: darken($color-darkblue, 4%);
+		padding: 20px;
+		margin-bottom: 25px;
+		.label {
+			opacity: .5;
+			margin-bottom: 18px;
+		}
+		.count {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		a {
+			color: $color-red;
+			font-size: 14px;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		canvas {
+			margin-top: 15px;
+		}
+	}
+	.table {
+		.title {
+			font-size: 24px;
+			font-weight: 600;
+			padding: 20px;
+			a {
+				color: $color-red;
+				vertical-align: bottom;
+			}
+		}
+		th, td {
+			&:first-child {
+				padding-left: 20px;
+			}
+			&:last-child {
+				padding-right: 20px;
+			}
+		}
+		tr:last-child {
+			td {
+				border-color: transparent;
+			}
+		}
+	}
+	.map-wbp {
+		.point {
+			width: 15px;
+			height: 15px;
+			vertical-align: middle;
+			display: inline-block;
+			background-color: transparent;
+			border: 3px solid $color-blue;
+			border-radius: 50%;
+			margin-right: 10px;
+			&-red {
+				border-color: $color-red;
+			}
+			&-green {
+				border-color: $color-green;
+			}
+			&-purple {
+				border-color: #AB07CF;
+			}
+			&-yellow {
+				border-color: #B6972D;
+			}
+		}
+	}
+}
