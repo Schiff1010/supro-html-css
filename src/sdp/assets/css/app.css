@@ -7949,7 +7949,8 @@ body, input, textarea, select, button {
     z-index: 0;
     font-size: 20px;
     top: 0;
-    right: -7px; }
+    right: -7px;
+    text-align: left; }
     .select-group label i {
       color: rgba(255, 255, 255, 0.3);
       margin-left: -35px;
@@ -8078,6 +8079,15 @@ body, input, textarea, select, button {
 .panel-collapse {
   background-color: #12182a;
   border-radius: 3px; }
+
+.h-100p {
+  height: 100% !important; }
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0; }
+  .breadcrumb a {
+    color: #00B94D; }
 
 .bg-darkblue {
   background-color: #182038;
@@ -8603,6 +8613,10 @@ section.content {
       section.content .data-option .btn-line-common {
         padding-left: 8px;
         padding-right: 8px; }
+      section.content .data-option h3 {
+        color: #fff;
+        margin-top: 0;
+        font-size: 24px; }
     section.content .data-content {
       margin-top: 30px;
       background-color: #12182a;
@@ -8645,6 +8659,49 @@ section.content {
             display: block; }
             section.content .data-content .wbp-history .card a:hover {
               text-decoration: none; }
+      section.content .data-content .title {
+        font-size: 24px;
+        font-weight: 600;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin: -20px;
+        margin-bottom: 20px;
+        padding: 20px; }
+      section.content .data-content .content-data-sidang {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        padding: 90px 40px;
+        margin: 20px;
+        margin-top: 40px;
+        overflow: hidden;
+        height: calc(100% - 110px) !important;
+        position: relative; }
+        section.content .data-content .content-data-sidang .item {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+          padding-bottom: 10px;
+          margin-bottom: 20px;
+          z-index: 2;
+          position: relative; }
+          section.content .data-content .content-data-sidang .item span {
+            font-size: 14px;
+            opacity: .5;
+            margin-bottom: 10px;
+            display: block; }
+          section.content .data-content .content-data-sidang .item h3 {
+            font-size: 28px; }
+        section.content .data-content .content-data-sidang i.material-icons {
+          position: absolute;
+          bottom: -10px;
+          right: -50px;
+          font-size: 240px;
+          z-index: 1;
+          opacity: .1; }
+      section.content .data-content .table-no-border {
+        margin-bottom: 0; }
+        section.content .data-content .table-no-border td {
+          vertical-align: middle;
+          border: 0; }
+          section.content .data-content .table-no-border td .select-group {
+            margin-bottom: 0; }
 
 .table {
   font-size: 14px;
@@ -8791,6 +8848,9 @@ section.detail {
 .theme-red section.content .search .quick-filter a .badge {
   background-color: #D24343; }
 
+.theme-red .table .title a {
+  color: #D24343; }
+
 .theme-red .table tbody td a {
   color: #D24343; }
 
@@ -8801,7 +8861,15 @@ section.detail {
   border-radius: 3px;
   background-color: #12182a;
   padding: 20px;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  overflow: hidden;
+  position: relative; }
+  .dashboard-executive .tile i.material-icons {
+    font-size: 150px;
+    opacity: .1;
+    position: absolute;
+    top: -30px;
+    right: -30px; }
   .dashboard-executive .tile .label {
     opacity: .5;
     margin-bottom: 18px; }
@@ -8822,7 +8890,7 @@ section.detail {
   font-weight: 600;
   padding: 20px; }
   .dashboard-executive .table .title a {
-    color: #D24343;
+    color: #00B94D;
     vertical-align: bottom; }
 
 .dashboard-executive .table th:first-child, .dashboard-executive .table td:first-child {
@@ -8849,5 +8917,33 @@ section.detail {
     border-color: #00B94D; }
   .dashboard-executive .map-wbp .point-purple {
     border-color: #AB07CF; }
+  .dashboard-executive .map-wbp .point-orange {
+    border-color: #CF6428; }
   .dashboard-executive .map-wbp .point-yellow {
     border-color: #B6972D; }
+
+.chart-h-200 {
+  height: 200px !important; }
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .loading img {
+    width: 200px; }
+  .loading.loading-page {
+    background-color: #182038;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 99999999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }

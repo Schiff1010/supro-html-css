@@ -13,15 +13,48 @@
 	<link rel="stylesheet" href="assets/css/app.css">
 	<!-- endinject -->
 </head>
-<body class="bg-darkblue theme-red no-sidebar">
+<body class="bg-darkblue">
 
-	<nav class="nav">
+  <aside class="nav-aside">
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/logo.svg" alt="Logo SDP">
+      </a>
+    </div>
+    <ul class="list-unstyled list">
+      <li class="active"><a href=""><i class="material-icons">assessment</i>Dashboard</a></li>
+      <li><a href=""><i class="material-icons">assignment_ind</i>Daftar Buku Masuk</a></li>
+      <li><a href=""><i class="material-icons">assignment_turned_in</i>Daftar Usulan</a></li>
+      <li><a href=""><i class="material-icons">assignment</i>Laporan Usulan</a></li>
+      <li class="aside-dropdown">
+        <a href="#"><i class="material-icons">insert_drive_file</i>Surat Keputusan <i class="material-icons float-right m-0">keyboard_arrow_down</i></a>
+        <ol class="list-unstyled aside-dropdown-menu">
+          <li><a href="">Remisi</a></li>
+          <li><a href="">Otorisasi</a></li>
+          <li><a href="">Pencabutan/Perbaikan</a></li>
+        </ol>
+      </li>
+      <li><a href=""><i class="material-icons">collections_bookmark</i>Rekapitulasi</a></li>
+      <li><a href=""><i class="material-icons">verified_user</i>Validasi</a></li>
+    </ul>
+  </aside>
+
+	<nav class="nav nav-app">
 		<div class="mr-auto">
-			<div class="item">
-				<div class="logo"><img src="assets/images/logo.svg" alt="Logo SDP"></div>
+      <!-- show in mobile view -->
+			<div class="item toggle-aside">
+				<a href="#"><i class="material-icons">menu</i></a>
+			</div>
+			<div class="item logo-mobile">
+        <a href="index.html"><img src="assets/images/logo.svg" alt="Logo SDP"></a>
+			</div>
+      <!-- end show in mobile view -->
+      
+			<div class="item app-icon">
+				<i class="material-icons">apps</i>
 			</div>
 			<div class="item">
-				<div class="title">Dashboard Executive</div>
+				<div class="title">Dasbor</div>
 			</div>
 			<div class="item help">
 				<a href="" title="Bantuan"><i class="material-icons">help_outline</i></a>
@@ -47,26 +80,12 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+  </nav>
   
   <section class="content dashboard-executive">
     <div class="data">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-4">
-            <div class="tile">
-              <div class="d-flex justify-content-between align-item-center">
-                <div>
-                  <div class="label">Jumlah WBP</div>
-                  <div class="count">750 orang</div>
-                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
-                </div>
-                <div>
-                  <canvas id="wbp-chart" width="100" height="100"></canvas>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div class="col-md-4">
             <div class="tile">
@@ -74,10 +93,9 @@
                 <div>
                   <div class="label">Usulan Remisi</div>
                   <div class="count">640 orang</div>
-                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
                 </div>
                 <div>
-                  <canvas id="usulan-remisi-chart" width="100" height="100"></canvas>
+                  <i class="material-icons">how_to_reg</i>
                 </div>
               </div>
             </div>
@@ -87,12 +105,25 @@
             <div class="tile">
               <div class="d-flex justify-content-between align-item-center">
                 <div>
-                  <div class="label">Mendapat Remisi</div>
+                  <div class="label">Sidang TPP</div>
                   <div class="count">200 orang</div>
-                  <a href="">Lihat detail <i class="material-icons">arrow_right_alt</i></a>
                 </div>
                 <div>
-                  <canvas id="remisi-chart" width="100" height="100"></canvas>
+                  <i class="material-icons">gavel</i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="tile">
+              <div class="d-flex justify-content-between align-item-center">
+                <div>
+                  <div class="label">Lama Usulan/Hari</div>
+                  <div class="count">750 orang</div>
+                </div>
+                <div>
+                  <i class="material-icons">assessment</i>
                 </div>
               </div>
             </div>
@@ -101,96 +132,13 @@
         </div>
 
         <div class="row">
-          <div class="col-md-8">
-            <div class="table-responsive">
-              <table class="table panel">
-                <thead>
-                  <tr>
-                    <th colspan="100" class="title">
-                      <div class="d-flex justify-content-between">
-                        <h3>Data Usulan Remisi</h3>
-                        <a href="">Lihat semua <i class="material-icons">arrow_right_alt</i></a>
-                      </div>
-                    </th>
-                  </tr>
-                  <tr>
-                    <th><a href="#">Nama WBP<i class="material-icons float-right">unfold_more</i></a></th>
-                    <th><a href="#">Jenis Kejahatan<i class="material-icons float-right">unfold_more</i></a></th>
-                    <th><a href="#">Tgl. Expirasi<i class="material-icons float-right">unfold_more</i></a></th>
-                    <th><a href="#">Besaran Remisi<i class="material-icons float-right">unfold_more</i></a></th>
-                    <th><a href="#">Jenis Remisi<i class="material-icons float-right">unfold_more</i></a></th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                  <tr>
-                    <td><a href="">Rusli Arnis</a></td>
-                    <td>Narkotika</td>
-                    <td>02/06/2020</td>
-                    <td>15 hari, 1 Bulan</td>
-                    <td>Hari Raya keagamaan</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
           <div class="col-md-4">
-            <div class="table-responsive map-wbp">
+            <div class="map-wbp">
               <table class="table panel">
                 <thead>
                   <tr>
                     <th colspan="100" class="title">
-                      <h3>Peta Jumlah WBP</h3>
+                      <h3>Usulan Remisi</h3>
                     </th>
                   </tr>
                 </thead>
@@ -198,28 +146,84 @@
                 <tbody>
                   <tr>
                     <td colspan="2">
-                      <img src="assets/images/map.png" alt="" width="100%">
+                      <div class="p-5">
+                        <canvas id="wbp-chart" width="100" height="100"></canvas>
+                      </div>
                     </td>
                   </tr>
                   <tr>
-                    <td><div class="point point-red"></div> DKI Jakarta</td>
+                    <td><div class="point point-red"></div> Jumlah Usulan</td>
                     <td class="text-right">200 orang</td>
                   </tr>
                   <tr>
-                    <td><div class="point point-green"></div> Makassar</td>
+                    <td><div class="point point-green"></div> Memenuhi Syarat</td>
                     <td class="text-right">120 orang</td>
                   </tr>
                   <tr>
-                    <td><div class="point point-blue"></div> Aceh</td>
+                    <td><div class="point point-blue"></div> Tidak Memenuhi Syarat</td>
                     <td class="text-right">23 orang</td>
                   </tr>
                   <tr>
-                    <td><div class="point point-purple"></div> Bandung</td>
+                    <td><div class="point point-purple"></div> Disetujui</td>
                     <td class="text-right">12 orang</td>
                   </tr>
                   <tr>
-                    <td><div class="point point-yellow"></div> Malang</td>
+                    <td><div class="point point-orange"></div> Tidak Disetujui</td>
+                    <td class="text-right">12 orang</td>
+                  </tr>
+                  <tr>
+                    <td><div class="point point-yellow"></div> Dicabut/Perbaikan</td>
                     <td class="text-right">21 orang</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <div class="col-md-8">
+            <div class="table-responsive">
+              <table class="table panel">
+                <thead>
+                  <tr>
+                    <th colspan="100" class="title">
+                      <div class="d-flex justify-content-between">
+                        <h3>Rekapitulasi Sidang TPP</h3>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <canvas id="rekapitulasi-chart" width="100" height="20"></canvas>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="table-responsive">
+              <table class="table panel">
+                <thead>
+                  <tr>
+                    <th colspan="100" class="title">
+                      <div class="d-flex justify-content-between">
+                        <h3>Lama Proses Usulan/ Hari</h3>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <canvas id="lama-usulan-chart" width="100" height="20"></canvas>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -242,18 +246,19 @@
         type: 'pie',
         data: {
           datasets: [{
-            backgroundColor: ['#0062CF', '#05B044', '#CF6428', '#AB07CF', '#C33737'],
+            backgroundColor: ['#0062CF', '#05B044', '#CF6428', '#AB07CF', '#C33737', '#B6972D'],
             borderWidth: 0,
-            data: [50, 10, 5, 5, 2]
+            data: [50, 10, 5, 5, 2, 10]
           }],
   
           // These labels appear in the legend and in the tooltips when hovering different arcs
           labels: [
-            'Belum Diusulkan',
-            'Diusulkan Remisi',
-            'Tidak Berhak Mendapat Remisi',
-            'Baru Putus/ Berkas Belum Lengkap',
-            'TAH'
+            'Blue',
+            'Green',
+            'Orange',
+            'Purple',
+            'Red',
+            'Yellow'
           ]
         },
         options: {
@@ -264,55 +269,157 @@
       })
     });
 
+
+    /* Rekapitulasi */
     $(function () {
-      var element = $('#usulan-remisi-chart');
-      var chart = new Chart(element, {
-        type: 'pie',
-        data: {
-          datasets: [{
-            backgroundColor: ['#0062CF', '#05B044'],
-            borderWidth: 0,
-            data: [50, 10]
-          }],
-  
-          // These labels appear in the legend and in the tooltips when hovering different arcs
-          labels: [
-            'Belum Diusulkan',
-            'Diusulkan Remisi'
+      var barChartData = {
+        labels: ['Blm. dijadwal', 'Pengajuan', 'Disetujui', 'Ditolak', 'Ditunda', 'Verifikasi', 'SK', 'Otorisasi', 'J. Pelaksana'],
+        datasets: [{
+          label: 'UPT',
+          backgroundColor: '#C33737',
+          stack: 'Stack 0',
+          data: [
+            10,
+            13,
+            5,
+            20,
+            15,
+            10,
+            11,
+            13,
+            15
           ]
-        },
+        }, {
+          label: 'Kanwil',
+          backgroundColor: '#0062CF',
+          stack: 'Stack 1',
+          data: [
+            5,
+            10,
+            13,
+            10,
+            15,
+            20,
+            21,
+            23,
+            30
+          ]
+        }, {
+          label: 'Ditjen',
+          backgroundColor: '#05B044',
+          stack: 'Stack 2',
+          data: [
+            8,
+            11,
+            12,
+            15,
+            17,
+            21,
+            26,
+            28,
+            29
+          ]
+        }]
+      };
+
+      var ctx = $('#rekapitulasi-chart');
+      window.myBar = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
         options: {
-          legend: {
-            display: false
+          title: {
+            display: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false
+          },
+          responsive: true,
+          scales: {
+            xAxes: [{
+              stacked: true,
+            }],
+            yAxes: [{
+              stacked: true
+            }]
           }
         }
-      })
+      });
     });
 
+
+    /* Lama Usulan */
     $(function () {
-      var element = $('#remisi-chart');
-      var chart = new Chart(element, {
-        type: 'pie',
-        data: {
-          datasets: [{
-            backgroundColor: ['#0062CF', '#05B044'],
-            borderWidth: 0,
-            data: [5, 50]
-          }],
-  
-          // These labels appear in the legend and in the tooltips when hovering different arcs
-          labels: [
-            'Belum Diusulkan',
-            'Diusulkan Remisi'
+      var barChartData = {
+        labels: ['Usulan Ke Sidang', 'TPP UPT ke Sidang Kanwil', 'TPP UPT ke Sidang Ditjen', 'Sidang ke Verifikasi', 'Verifikasi Sidang ke Generate SK', 'Generate SK/ Otorisasi/Kanwil', 'Generate SK/ Otorisasi/UPT'],
+        datasets: [{
+          label: 'UPT',
+          backgroundColor: '#C33737',
+          stack: 'Stack 0',
+          data: [
+            10,
+            13,
+            20,
+            10,
+            11,
+            13,
+            15
           ]
-        },
+        }, {
+          label: 'Kanwil',
+          backgroundColor: '#0062CF',
+          stack: 'Stack 1',
+          data: [
+            5,
+            10,
+            13,
+            10,
+            15,
+            23,
+            30
+          ]
+        }, {
+          label: 'Ditjen',
+          backgroundColor: '#05B044',
+          stack: 'Stack 2',
+          data: [
+            8,
+            11,
+            12,
+            15,
+            17,
+            28,
+            29
+          ]
+        }]
+      };
+
+      var ctx = $('#lama-usulan-chart');
+      window.myBar = new Chart(ctx, {
+        type: 'bar',
+        data: barChartData,
         options: {
-          legend: {
-            display: false
-          }
+          title: {
+            display: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false
+          },
+          responsive: true,
+          scales: {
+            xAxes: [{
+              stacked: true,
+              display: false,
+            }],
+            yAxes: [{
+              stacked: true
+            }]
+          },
         }
-      })
+      });
     });
+	
   </script>
 </body>
 </html>

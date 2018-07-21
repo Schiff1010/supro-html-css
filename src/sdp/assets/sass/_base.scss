@@ -137,6 +137,7 @@ body, input, textarea, select, button {
 		font-size: 20px;
 		top: 0;
 		right: -7px;
+		text-align: left;
 		i {
 			color: rgba(255,255,255,.3);
 			margin-left: -35px;
@@ -302,4 +303,16 @@ body, input, textarea, select, button {
 .panel-collapse {
 	background-color: darken($color-darkblue, 4%);
 	border-radius: 3px;
+}
+
+.h-100p {
+	height: 100% !important;
+}
+
+.breadcrumb {
+	background-color: transparent;
+	padding: 0;
+	a {
+		color: $color-green;
+	}
 }

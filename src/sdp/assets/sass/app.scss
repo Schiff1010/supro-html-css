@@ -667,6 +667,11 @@ section.content {
 				padding-left: 8px;
 				padding-right: 8px;
 			}
+			h3 {
+				color: $color-light;
+				margin-top: 0;
+				font-size: 24px;
+			}
 		}
 
 		&-content {
@@ -725,6 +730,58 @@ section.content {
 						&:hover {
 							text-decoration: none;
 						}
+					}
+				}
+			}
+			.title {
+				font-size: 24px;
+				font-weight: 600;
+				border-bottom: 1px solid rgba(255,255,255,.2);
+				margin: -20px;
+				margin-bottom: 20px;
+				padding: 20px;
+			}
+			.content-data-sidang {
+				border: 1px solid rgba(255,255,255,.2);
+				border-radius: 3px;
+				padding: 90px 40px;
+				margin: 20px;
+				margin-top: 40px;
+				overflow: hidden;
+				height: calc(100% - 110px) !important;
+				position: relative;
+				.item {
+					border-bottom: 1px solid rgba(255,255,255,.2);
+					padding-bottom: 10px;
+					margin-bottom: 20px;
+					z-index: 2;
+					position: relative;
+					span {
+						font-size: 14px;
+						opacity: .5;
+						margin-bottom: 10px;
+						display: block;
+					}
+					h3 {
+						font-size: 28px;
+					}
+				}
+				i.material-icons {
+					position: absolute;
+					bottom: -10px;
+					right: -50px;
+					font-size: 240px;
+					z-index: 1;
+					opacity: .1;
+				}
+			}
+			.table-no-border {
+				margin-bottom: 0;
+				td {
+					vertical-align: middle;
+					border: 0;
+					.select-group {
+						margin-bottom: 0;
 					}
 				}
 			}
@@ -940,8 +997,13 @@ section.detail {
 	section.content .search .quick-filter a .badge {
 		background-color: $color-red;
 	}
-	.table tbody td a {
-		color: $color-red;
+	.table {
+		.title a {
+			color: $color-red;
+		}
+		tbody td a {
+			color: $color-red;
+		}
 	}
 }
 
@@ -957,6 +1019,15 @@ section.detail {
 		background-color: darken($color-darkblue, 4%);
 		padding: 20px;
 		margin-bottom: 25px;
+		overflow: hidden;
+		position: relative;
+		i.material-icons {
+			font-size: 150px;
+			opacity: .1;
+			position: absolute;
+			top: -30px;
+			right: -30px;
+		}
 		.label {
 			opacity: .5;
 			margin-bottom: 18px;
@@ -983,7 +1054,7 @@ section.detail {
 			font-weight: 600;
 			padding: 20px;
 			a {
-				color: $color-red;
+				color: $color-green;
 				vertical-align: bottom;
 			}
 		}
@@ -1020,9 +1091,36 @@ section.detail {
 			&-purple {
 				border-color: #AB07CF;
 			}
+			&-orange {
+				border-color: #CF6428;
+			}
 			&-yellow {
 				border-color: #B6972D;
 			}
 		}
+	}
+}
+
+.chart-h-200 {
+	height: 200px !important;
+}
+
+.loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 200px;
+	}
+	&.loading-page {
+		background-color: $color-darkblue;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		z-index: 99999999999999;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }
