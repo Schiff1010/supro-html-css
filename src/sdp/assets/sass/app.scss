@@ -1,135 +1,7 @@
-@import "variables";
-@import "mixins";
-@import "base";
-
-.bg-darkblue {
-	background-color: $color-darkblue;
-	color: $color-light;
-}
-
-.v-center {
-	// need height
-	position: relative;
-	&-wrapper {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-	}
-}
-
-.panel {
-	background-color: darken($color-darkblue, 4%);
-	padding: 30px;
-	border-radius: 3px;
-	width: 100%;
-}
-
-.btn {
-	transition: all .2s;
-	outline: none;
-	i {
-		transition: all .2s;
-		opacity: .5;
-	}
-	&:hover {
-		box-shadow: 0 20px 40px rgba(0,0,0,.1);
-		i {
-			opacity: 1;
-		}	
-	}
-	&-default {
-		color: $color-light;
-	}
-	&-round {
-		border-radius: 100px;
-	}
-	&-line {
-		border: 2px solid;
-		background-color: transparent;
-		text-align: left;
-		@include ellipsis;
-		i {
-			margin-right: 10px;
-			opacity: 1;
-		}
-	}
-	&-line-green {
-		border-color: $color-green;
-		color: $color-green;
-		&:hover {
-			color: $color-green;
-		}
-	}
-	&-line-red {
-		border-color: $color-red;
-		color: $color-red;
-		&:hover {
-			color: $color-red;
-		}
-	}
-	&-line-orange {
-		border-color: $color-orange;
-		color: $color-orange;
-		&:hover {
-			color: $color-orange;
-		}
-	}
-	&-line-common {
-		border-color: rgba(255,255,255,.3);
-		color: $color-light;
-		&:hover {
-			color: $color-light;
-		}
-	}
-	&-green {
-		background-color: $color-green;
-		color: $color-light;
-		&:hover {
-			background-color: darken($color-green, 5%);
-		}
-	}
-	&-red {
-		background-color: $color-red;
-		color: $color-light;
-		&:hover {
-			background-color: darken($color-red, 5%);
-		}
-	}
-	&-common {
-		background-color: rgba(255,255,255,.1);
-		color: $color-light;
-		&:hover {
-			background-color: rgba(255,255,255,.2);
-		}
-	}
-}
-
-i.material-icons {
-	vertical-align: bottom;
-}
-
-.alert {
-	i.material-icons {
-		margin-right: 10px;
-		opacity: .3;
-		margin-left: -5px;
-	}
-}
-
-.dropdown-menu {
-	background-color: lighten($color-darkblue, 5%);
-	margin-top: 10px;
-	.dropdown-item {
-		color: $color-light;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		font-size: 14px;
-		&:hover {
-			background-color: lighten($color-darkblue, 2%);
-			color: $color-light;
-		}
-	}
-}
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'theme';
 
 .logo {
 	img {
@@ -276,7 +148,7 @@ i.material-icons {
 		margin-right: 15px;
 		position: relative;
 		&:after {
-			content: "";
+			content: '';
 			display: block;
 			width: 40px;
 			height: 1px;
@@ -385,7 +257,7 @@ section.dashboard {
 			position: relative;
 			margin-bottom: 20px;
 			&:after {
-				content: "";
+				content: '';
 				display: block;
 				width: 40px;
 				height: 1px;
@@ -422,6 +294,7 @@ section.dashboard {
 			margin-left: -30px;
 			margin-right: -30px;
 			a {
+				@include ellipsis;
 				color: $color-light;
 				transition: all .2s;
 				font-size: 14px;
@@ -744,7 +617,7 @@ section.content {
 			.content-data-sidang {
 				border: 1px solid rgba(255,255,255,.2);
 				border-radius: 3px;
-				padding: 90px 40px;
+				padding: 53px 40px;
 				margin: 20px;
 				margin-top: 40px;
 				overflow: hidden;
@@ -763,7 +636,7 @@ section.content {
 						display: block;
 					}
 					h3 {
-						font-size: 28px;
+						font-size: 24px;
 					}
 				}
 				i.material-icons {
@@ -982,31 +855,6 @@ section.detail {
 	letter-spacing: 3px;
 }
 
-.theme-red {
-	.nav-app, .nav {
-		.help a {
-			color: $color-red;
-		}
-		.title:after {
-			background-color: $color-red;
-		}
-	}
-	.nav-aside .list li.active a {
-		background-color: $color-red;
-	}
-	section.content .search .quick-filter a .badge {
-		background-color: $color-red;
-	}
-	.table {
-		.title a {
-			color: $color-red;
-		}
-		tbody td a {
-			color: $color-red;
-		}
-	}
-}
-
 .no-sidebar {
 	.content {
 		padding-left: 30px;
@@ -1122,5 +970,34 @@ section.detail {
 		left: 0;
 		right: 0;
 		bottom: 0;
+	}
+}
+
+.error-page {
+	text-align: center;
+	height: 70vh;
+	margin-top: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	.content {
+		h1 {
+			margin-top: 0;
+			font-size: 160px;
+			font-weight: 600;
+		}
+		p {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+		a {
+			padding-right: 20px;
+			i {
+				margin-right: 10px;
+			}
+		}
 	}
 }

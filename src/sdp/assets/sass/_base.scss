@@ -1,8 +1,8 @@
-@import "../../../../node_modules/bootstrap/dist/css/bootstrap.min";
-@import "../../../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min";
-@import "../../../../node_modules/select2/dist/css/select2.min";
-@import  'variables';
-@import  'mixins';
+@import '../../../../node_modules/bootstrap/dist/css/bootstrap.min';
+@import '../../../../node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker.min';
+@import '../../../../node_modules/select2/dist/css/select2.min';
+@import 'variables';
+@import 'mixins';
 
 * {
 	box-sizing: border-box;
@@ -43,6 +43,135 @@ body, input, textarea, select, button {
 
 .flex {
 	display: flex;
+}
+
+.bg-darkblue {
+	background-color: $color-darkblue;
+	color: $color-light;
+}
+
+.v-center {
+	// need height
+	position: relative;
+	&-wrapper {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.panel {
+	background-color: darken($color-darkblue, 4%);
+	padding: 30px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+i.material-icons {
+	vertical-align: bottom;
+}
+
+.alert {
+	i.material-icons {
+		margin-right: 10px;
+		opacity: .3;
+		margin-left: -5px;
+	}
+}
+
+.dropdown-menu {
+	background-color: lighten($color-darkblue, 5%);
+	margin-top: 10px;
+	.dropdown-item {
+		color: $color-light;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 14px;
+		&:hover {
+			background-color: lighten($color-darkblue, 2%);
+			color: $color-light;
+		}
+	}
+}
+
+.btn {
+	transition: all .2s;
+	outline: none;
+	i {
+		transition: all .2s;
+		opacity: .5;
+	}
+	&:hover {
+		box-shadow: 0 20px 40px rgba(0,0,0,.1);
+		i {
+			opacity: 1;
+		}	
+	}
+	&-default {
+		color: $color-light;
+	}
+	&-round {
+		border-radius: 100px;
+	}
+	&-line {
+		border: 2px solid;
+		background-color: transparent;
+		text-align: left;
+		@include ellipsis;
+		i {
+			margin-right: 10px;
+			opacity: 1;
+		}
+	}
+	&-line-green {
+		border-color: $color-green;
+		color: $color-green;
+		&:hover {
+			color: $color-green;
+		}
+	}
+	&-line-red {
+		border-color: $color-red;
+		color: $color-red;
+		&:hover {
+			color: $color-red;
+		}
+	}
+	&-line-orange {
+		border-color: $color-orange;
+		color: $color-orange;
+		&:hover {
+			color: $color-orange;
+		}
+	}
+	&-line-common {
+		border-color: rgba(255,255,255,.3);
+		color: $color-light;
+		&:hover {
+			color: $color-light;
+		}
+	}
+	&-green {
+		background-color: $color-green;
+		color: $color-light;
+		&:hover {
+			background-color: darken($color-green, 5%);
+		}
+	}
+	&-red {
+		background-color: $color-red;
+		color: $color-light;
+		&:hover {
+			background-color: darken($color-red, 5%);
+		}
+	}
+	&-common {
+		background-color: rgba(255,255,255,.1);
+		color: $color-light;
+		&:hover {
+			background-color: rgba(255,255,255,.2);
+		}
+	}
 }
 
 .checkbox {
@@ -314,5 +443,21 @@ body, input, textarea, select, button {
 	padding: 0;
 	a {
 		color: $color-green;
+	}
+}
+
+.badge {
+	font-weight: normal;
+	&.badge-primary {
+		background-color: $color-green;
+	}
+	&.badge-red {
+		background-color: $color-red;
+	}
+	&.badge-blue {
+		background-color: $color-blue;
+	}
+	&.badge-common {
+		background-color: rgba(255,255,255,.3);
 	}
 }
