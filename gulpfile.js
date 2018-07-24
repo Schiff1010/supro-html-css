@@ -1,9 +1,11 @@
 // List Projects
 	const projects = [
 		{
-			name: 'one-html',
+			name: 'dpm-ptsp',
 			script: [
-				
+				"node_modules/jquery/dist/jquery.min.js",
+				"node_modules/popper.js/dist/umd/popper.min.js",
+				"node_modules/bootstrap/dist/js/bootstrap.min.js"
 			]
 		},
 	]
@@ -17,7 +19,7 @@
 	const autoprefixer = require('gulp-autoprefixer')
 	const notify = require('gulp-notify')
 	const inject = require('gulp-inject')
-	const uglifyjs = require('gulp-uglifyjs');
+	const uglifyjs = require('gulp-uglifyjs')
 	const uglifycss = require('gulp-uglifycss')
 
 // Const Path

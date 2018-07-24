@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Chela One', cursive;
+  font-family: 'Open Sans', sans-serif; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ul, li {
+  margin: 0px;
+  list-style-type: none; }
+
+.wrap-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.logo {
+  display: block;
+  position: absolute;
+  left: 52px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 45px;
+  color: #000;
+  font-weight: bold; }
+
+nav {
+  display: block; }
+
+.main_menu {
+  list-style-type: none;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main_menu li {
+    position: relative; }
+    .main_menu li a {
+      color: #000;
+      font-weight: 600; }
+  .main_menu > li {
+    display: block;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+#myCarousel {
+  background: #b5afaf; }
+
+.header-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 52px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .header-icon a {
+    color: #000;
+    font-weight: 600; }
+
+.carousel-inner img {
+  width: 100%;
+  margin: auto; }
+
+.carousel-inner .item {
+  padding: 70px; }
+
+.flex-w {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.blok4 {
+  position: relative;
+  overflow: hidden;
+  width: calc(100% / 3); }
+  .blok4 img {
+    width: 100%; }
+
+.block {
+  position: relative;
+  overflow: hidden;
+  width: calc(100%/6); }
+  .block img {
+    width: 100%; }
+
+img {
+  vertical-align: middle;
+  border-style: none; }
+
+.tabs {
+  width: 100%;
+  margin-top: -30px; }
+  .tabs ul {
+    float: right; }
+    .tabs ul li {
+      font-size: 11px;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 0.5);
+      float: left;
+      margin-right: 20px;
+      cursor: pointer;
+      -webkit-transition: all 200ms ease;
+      -moz-transition: all 200ms ease;
+      -webkit-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 200ms;
+              transition-duration: 200ms;
+      -webkit-transition-timing-function: ease;
+              transition-timing-function: ease;
+      -webkit-transition-delay: 0s;
+              transition-delay: 0s;
+      transition: all 200ms ease; }
+      .tabs ul li.active {
+        color: #000;
+        font-weight: 600; }
+  .tabs .title-item {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    float: left; }
+
+.img-item img {
+  width: 100%; }
+
+.litle {
+  margin: 100px -15px; }
+  .litle.right {
+    float: right; }
+  .litle.left {
+    float: left; }
+  .litle img {
+    width: 150px;
+    background: #b5afaf; }
+  .litle .text {
+    width: 100px;
+    position: absolute;
+    top: 100px;
+    left: 20px; }
+    .litle .text h4 {
+      font-size: 18px;
+      font-weight: bold; }
+
+.big {
+  padding-bottom: 100px; }
+  .big img {
+    width: 100%;
+    background: #b5afaf; }
+  .big .text {
+    position: absolute;
+    width: 20%;
+    top: 50px;
+    left: -70px; }
+    .big .text h4 {
+      font-size: 32px;
+      font-weight: bold; }
+
+.bg-1 {
+  margin-bottom: 100px; }
+
+footer {
+  margin-top: 50px; }
+  footer .f-one {
+    padding-bottom: 20px; }
+
+.t-title .t-more {
+  float: right;
+  position: relative;
+  margin-top: -15px; }
+
+.sec8 img {
+  width: 100%; }
+
+.content {
+  margin-top: 50px; }
+  .content img {
+    width: 100%;
+    padding-bottom: 30px; }
