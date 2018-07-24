@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
   $('.toggle-nav').on('click', () => {
     $('nav .nav-bottom').toggleClass('active');
     $('body').toggleClass('fixed');
@@ -27,7 +27,37 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
+*/
+var $itemElement = $('.img-item');
+$('.filter_link').click(function(e){
+  e.preventDefault();
+  var filterVal = $(this).data('filter');
 
-$('.slider').slick({
-  rtl:true
+  if(filterVal === 'all' ) {
+    $itemElement.show();
+  }else {
+    $itemElement.hide().filter('.' + filterVal).show();
+  }
 });
+
+$(document).ready(function() {
+  $('.blok4').magnificPopup({
+    delegate: 'a',
+    type:'image',
+    tLoading: 'loading image #%curr%..',
+    mainClass: 'mfp-img-mobile',
+    gallery: {
+      enable: true,
+      navigateByImgClick :true,
+      preload:[0,1]
+    },
+    image : {
+      tError: '<a href="%url%">The Image #%curr%</a>could not be loaded.',
+      titleSrc : function(item) {
+        return item.el.attr('title') + '<small>pop up image</small>'
+      }
+    }
+
+  });
+});
+

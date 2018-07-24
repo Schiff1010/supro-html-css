@@ -18,5 +18,8 @@
     "gulp-uglifyjs": "^0.6.2",
     "run-sequence": "^2.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lightbox2": "^2.10.0",
+    "magnific-popup": "^1.1.0"
+  }
 }

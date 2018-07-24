@@ -55,7 +55,35 @@ ul,, li {
 
 nav {
 	display:block;
+	background:transparent;
 }
+
+.navbar-brand {
+	color:#000;
+	font-size:32px;
+	font-weight:bold;
+}
+
+.navbar {
+
+	.navbar-nav {
+		&>li{
+
+			& >a {
+				font-size:18px;
+				color:#000;
+				font-weight:600;
+
+			}
+			&.active {
+
+				text-decoration: underline;
+			}
+
+		}
+	}
+}
+
 .main_menu {
 	list-style-type: none;
 	margin: 0px;
@@ -86,6 +114,35 @@ nav {
 
 #myCarousel {
 	background:#b5afaf;
+	.icon {
+		padding:50% 0;
+	}
+	.item {
+
+		.t-main {
+			padding:50px 0;
+		}
+		small {
+			letter-spacing: 2px;
+			color:#f44242;
+			font-size:12px;
+		}
+		h1 {
+			font-size:64px;
+			font-weight:900;
+			color:#000;
+		}
+		a {
+			color:#000;
+			text-decoration:underline;
+			text-transform: uppercase;
+			letter-spacing:2px;
+			font-size:12px;
+			font-weight:600;
+		}
+	}
+	
+
 }
 
 .header-icon {
@@ -162,7 +219,6 @@ img {
 		li {
 			font-size: 11px;
 			font-weight: 500;
-			color: rgba(0,0,0,0.5);
 			float:left;
 			margin-right: 20px;
 			cursor: pointer;
@@ -175,10 +231,19 @@ img {
 			-ms-transition: all 200ms ease;
 			-o-transition: all 200ms ease;
 			transition: all 200ms ease;
-			&.active {
-				color:#000;
+			a {
+				color:#666768;
+				font-size:12px;
 				font-weight:600;
 			}
+			&.active {
+				a {
+				
+				color:#000;	
+				}
+				
+			}
+			
 
 		}
 	}
@@ -243,7 +308,7 @@ img {
 }
 
 .bg-1 {
-	margin-bottom: 100px;
+	//margin-bottom: 20px;
 
 
 }
@@ -277,5 +342,18 @@ footer {
 		padding-bottom:30px;
 
 	
+	}
+}
+
+.title-item {
+	padding:50px 0;
+	h2 {
+		font-size:32px;
+		font-weight:600;
+	}
+	span {
+		color:#000;
+		opacity: 0.5;
+		font-size:12px;
 	}
 }
