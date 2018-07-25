@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--<link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap-lightbox.min.css">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- Magnific Popup core CSS file -->
 	
@@ -22,7 +23,7 @@
 </head>
 <body>
 	
-	<nav class="navbar ">
+	<nav class="navbar " style="background: transparent">
 	  <div class="container-fluid">
 	    <div class="navbar-header">
 	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -152,18 +153,20 @@
 	      <span class="sr-only">Next</span>
 	    </a>
 	</div>
-	<div class="flex-w">
-		<div class="blok4">
-			<img src="assets/images/bg-img/bg-4.jpg" alt="" onclick="openModal(); currentSlide(1)" class="hover-shadow cursor">
+
+	<div class="flex-w ">
+		<div class="blok4  ">
+			<img src="assets/images/bg-img/bg-4.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" >
 		</div>
 		<div class="blok4">
-			<img src="assets/images/bg-img/bg-2.jpg" alt="" onclick="openModal(); currentSlide(2)" class="hover-shadow cursor">
+			<img src="assets/images/bg-img/bg-2.jpg" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" >
 		</div>
 		<div class="blok4">
-			<img src="assets/images/bg-img/bg-3.jpg" alt="" onclick="openModal(); currentSlide(3)" class="hover-shadow">
-			
+			<img src="assets/images/bg-img/bg-3.jpg" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 		</div>
 	</div>
+
+	
 
 	<div class="bg-1">
 		<div class="container">
@@ -222,14 +225,11 @@
 	<div class="title-item">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="flex-w">
 					<div class="title-item">
 						<h2>New Arrival</h2>
 						<span>Browse the huge variety</span>
 					</div>
-
-				</div>
-				<div class="col-md-6 tabs">
 					<ul class="sub-item">
 						<li class="active"><a href="#" data-filter="all" class="filter_link">All products</a></li>
 						<li><a href="#" data-filter="clothing" class="filter_link">Clothing</a></li>
@@ -243,7 +243,7 @@
 			<div class="row img-item shoes">
 				<div class="col-md-4">
 					<img src="assets/images/ladies/1.jpg" alt="" >
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
@@ -252,7 +252,7 @@
 				</div>
 				<div class="col-md-4">
 					<img src="assets/images/ladies/2.jpg" alt="">
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
@@ -260,7 +260,7 @@
 				</div>
 				<div class="col-md-4">
 					<img src="assets/images/ladies/3.jpg" alt="" >
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
@@ -270,7 +270,7 @@
 			<div class="row img-item bags">
 				<div class="col-md-4">
 					<img src="assets/images/ladies/4.jpg" alt="" >
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
@@ -278,7 +278,7 @@
 				</div>
 				<div class="col-md-4">
 					<img src=assets/images/ladies/5.jpg alt="" >
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
@@ -286,14 +286,14 @@
 				</div>
 				<div class="col-md-4">
 					<img src="assets/images/ladies/6.jpg" alt="" >
-					<div >
+					<div class="text">
 						<a href="">ADD TO CHART</a>
 						<h6>Seams  Faux Suede Coat</h6>
 						<span>$49,90</span>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row more">
 				<div class="col" style="text-align: center;">
 					<a href="" >DISCOVER MORE</a>
 				</div>
@@ -302,14 +302,23 @@
 		
 	</div>
 
-	<div class="" style="background: #b8b8b8">
+	<div class="bag-shop" >
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 bag-item" >
 					<span>Deal of the day</span>
 					<h2>Hobo Shopper Bag</h2>
-
+					<small><span>$79,90</span>$39,90</small>
+					<div style="background: red; width: 15%;">Save 50%</div>
+					<div class="timer" style="display:flex;background:white;width: 50%;">
+						<span><h4>04</h4>Days</span>
+						<span><h4>18</h4>Hours</span>
+						<span><h4>36</h4>Minutes</span>
+						<span><h4>57</h4>Seconds</span>
+					</div>
+					<div class="more"><a href="">Shop Now</a></div>
 				</div>
+				
 				<div class="col-md-6" >
 					<img style="width: 100%; padding:20px 0;" src="assets/images/img-1.png" alt="">
 				</div>
@@ -323,7 +332,7 @@
 			<div class="t-title">
 				<h2>Lates News</h2>
 				<small>Our Recent articles about fashion ideas & product</small>
-				<div class="t-more">
+				<div class="t-more more">
 					<a href="">SEE MORE News</a>
 				</div>
 			</div>
@@ -331,7 +340,10 @@
 				<div class="col-md-4">
 					<img src="assets/images/portfolio/1.jpg" alt="" style="width: 100%">
 					<h4>Five things you only know if you were at chanel's Hamburg Show</h4>
-					<a href="">READ MORE</a>
+					<div class="more">
+						<a href="">READ MORE</a>
+					</div>
+					
 				</div>
 
 				<div class="col-md-4">
@@ -468,19 +480,15 @@
 	</div>
 	
 
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous"></script>
-	  <!-- Magnific Popup core JS file -->
 	
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="../../node_modules/bootstrap/dist/js/bootstrap-lightbox.min.js"></script>-->
 	<!-- inject:js -->
 	<script src="assets/scripts/libraries.js"></script>
 	<script src="assets/scripts/app.js"></script>
 	<!-- endinject -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
 
 </body>
 </html>

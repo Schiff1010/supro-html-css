@@ -64,6 +64,7 @@ $(document).ready(function() {
 */
 
 //modal
+
 function openModal() {
   document.getElementById('myModal').style.display = "block ";
 }
