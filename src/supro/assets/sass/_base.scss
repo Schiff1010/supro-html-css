@@ -1,0 +1,13 @@
+@import	"../../../../node_modules/bootstrap/dist/css/bootstrap.min";
+@import "../../../../node_modules/bootstrap/dist/css/bootstrap-grid.min";
+@import	"../../../../node_modules/owl.carousel/dist/assets/owl.carousel.min";
+// @import "../../../../node_modules/slick-carousel/slick/slick";
+// @import "../../../../node_modules/slick-carousel/slick/slick-theme";
+@import	'css/slick';
+@import	'css/slick-theme';
+@import 'variables';
+@import 'mixins';
+
+* {
+	box-sizing: border-box;
+}
